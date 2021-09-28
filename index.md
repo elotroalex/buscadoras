@@ -5,10 +5,10 @@ banner:
   collection: qatar
   pid: obj10
   y: 25%
-  height: '500px'
+  height: "500px"
 ---
 
-#Lipsum
+## Lipsum
 
 Hola Alex, gracias por ayudarme a configurar mi ambiente.
 
