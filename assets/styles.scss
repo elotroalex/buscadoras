@@ -10,8 +10,8 @@ $logo: url("{{ '/assets/logo.png' | absolute_url }}");
 
 /* text */
 
-$body-font:       'Open Sans', 'sans-serif';
-$heading-font:    'Open Sans', 'sans-serif';
+$body-font:       'Inter', 'sans-serif';
+$heading-font:    'Libre Baskerville', 'sans-serif';
 
 
 /* Image Size */
@@ -21,15 +21,18 @@ $thumbnail-width: 140px;
 
 /* colors */
 
-$text-color:      #100c01;
-$bg-color:        #ffffff;
-$neutral:         #eae7de;
-$accent-light:    #966d09;
-$accent-dark:     #644906;
+$text-color:      #191717;
+$bg-color:        #F5F5F5;
+$neutral:         #EBEBEB;
+
+$accent-light-ultra-ultra:    #d2e9ea;
+$accent-light-ultra:    #a0d5d5;
+$accent-light:    #6bc0c1;
+$accent-dark:     #4e8c8d;
 
 /* viewport sizes */
 
-$max-width:       800px;
+$max-width:       980px;
 
 /* margins */
 
@@ -47,5 +50,7 @@ $footer-height:   250px;
 font & asset import
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&font-display=auto');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 @import 'wax';

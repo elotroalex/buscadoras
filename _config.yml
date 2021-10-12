@@ -18,11 +18,11 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Buscadoras'
-description:      'Minimal Exhibitions with Jekyll'
+title:            'Las Buscadoras'
+description:      'Historias orales, recursos, mapas y andamiaje institucional'
 url:              'https://minicomp.github.io'
 baseurl:          '/buscadoras'
-copyright:        'Example copyright org, 2019'
+copyright:        'Copy Left, 2022'
 logo:             '/assets/logo.png'
 
 # ---------------------------------------------------------------
@@ -39,7 +39,7 @@ exclude:
   - vendor
   - spec
   - README.md
-incremental: false
+incremental: true
 webrick:
   headers:
     'Access-Control-Allow-Origin': '*'
@@ -103,26 +103,14 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'About'
-    sub:
-      - label: 'Wax'
-        link: '/about/'
-      - label: 'Documentation'
-        link: 'https://minicomp.github.io/wiki/wax/'
-      - label: 'Credits'
-        link: '/credits/'
-  - label: 'Exhibits'
-    sub:
-      - label: 'Inline Parallax Image'
-        link: '/exhibits/a/'
-      - label: 'Inline Image References'
-        link: '/exhibits/b/'
-  - label: 'Browse'
-    link: '/collection/'
-  - label: 'Search'
-    link: '/search/'
-  - label: 'Reuse'
-    link: '/reuse/'
+  - label: 'Historias Orales'
+    link: '/historias/'
+  - label: 'Documentos'
+    link: '/documentos/'
+  - label: 'Visualizaciones y Mapas'
+    link: '/datavis/'
+  - label: 'Directorio'
+    link: '/directorio/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
@@ -131,12 +119,10 @@ menu:
 
 footer:
   links:
-    - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
-    - label: 'Credits'
+    - label: 'Créditos'
       link: '/credits'
-    - label: 'Contact'
-      link: 'https://gitter.im/minicomp/wax/'
+    - label: 'Contacto'
+      link: '/contacto'
   logos:
     - img: '/img/logo.png'
 

@@ -1,9 +1,7 @@
 @import 'bootstrap';
 
 /*
-
 main body & containers
-
 */
 
 html, body {
@@ -17,6 +15,12 @@ html, body {
   word-wrap: break-word;
 }
 
+h2, h3, h4, h5,
+.h2, .h3, .h4, .h5 {
+  font-family: $body-font;
+}
+
+
 a {
   color: $accent-light;
   font-weight: 700;
@@ -25,7 +29,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: $accent-dark;
 }
 
 p {
@@ -40,20 +43,40 @@ p {
   text-rendering: optimizeLegibility;
 }
 
+
+
 /*
-
 header & nav bar
-
 */
 
-#wax-header {
-  background-color: $bg-color;
-  border-bottom: 1px solid $text-color;
-  font-family: $heading-font;
+#wax-sidebar {
+  background-color: $neutral;
+  font-family: $body-font;
   color: $text-color;
   z-index: 100000;
-  padding: $margin;
-  letter-spacing: 0.075rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 80px;
+
+  .bookmark-ultra {
+    min-width: 100%;
+    min-height: 120px;
+    background-color: $accent-light-ultra;
+    position: relative;
+    top: 42px;
+  }
+
+  .bookmark {
+    min-width: 100%;
+    min-height: 80px;
+    background-color: $accent-light;
+    position: relative;
+    top: 118px;
+  }
+
 
   .navbar-brand {
     font-weight: 700;
@@ -63,7 +86,7 @@ header & nav bar
   }
 
   .navbar-brand:hover {
-    color: $accent-dark;
+
   }
 
   .navbar-toggler {
@@ -94,10 +117,15 @@ header & nav bar
   }
 }
 
+
+
+
+
+
+
+
 /*
-
 content section
-
 */
 #wax-main {
   background-color: $bg-color;
@@ -114,13 +142,17 @@ content section
   }
 
   h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 7.2em;
+    font-weight: 700;
+    color: #444242;
+
+    margin: 0 0 32px 0;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 0.1rem;
+    font-weight: 700;
   }
 
   h3 {
@@ -153,6 +185,16 @@ content section
     font-size: 1rem;
     line-height: 2rem;
     max-width: 100%;
+  }
+
+  .content-top {
+    margin: 90px 0;
+
+    p {
+      font-size: 2.8em;
+      text-indent: 1.2em;
+      border-top: 18px solid $accent-light-ultra;
+    }
   }
 
   #wax-content {
@@ -196,6 +238,9 @@ content section
     }
   }
 }
+
+
+
 
 #wax-footer {
   width: 100vw;
