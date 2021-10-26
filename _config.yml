@@ -18,7 +18,7 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Las Buscadoras'
+title:            'Buscadoras'
 description:      'Historias orales, recursos, mapas y andamiaje institucional'
 url:              'https://minicomp.github.io'
 baseurl:          '/buscadoras'
@@ -107,7 +107,7 @@ menu:
     link: '/historias/'
   - label: 'Documentos'
     link: '/documentos/'
-  - label: 'Visualizaciones y Mapas'
+  - label: 'Mapas'
     link: '/datavis/'
   - label: 'Directorio'
     link: '/directorio/'

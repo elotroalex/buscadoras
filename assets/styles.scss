@@ -10,9 +10,8 @@ $logo: url("{{ '/assets/logo.png' | absolute_url }}");
 
 /* text */
 
-$body-font:       'Inter', 'sans-serif';
 $heading-font:    'Libre Baskerville', 'sans-serif';
-
+$body-font:       'Inter', 'sans-serif';
 
 /* Image Size */
 
@@ -46,11 +45,8 @@ $viewer-height:   550px;
 $parallax-height: 350px;
 $footer-height:   250px;
 
-/*
-font & asset import
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-@import 'wax';
+@import 'bus';

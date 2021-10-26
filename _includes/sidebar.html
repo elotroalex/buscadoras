@@ -1,10 +1,23 @@
 
+<nav id='bus-sidebar'>
 
-<nav id='wax-sidebar'>
+<a href="#home" class="navi" id="a-home">//</a>
 
-<a href="#" id="a_home">//</a>
+<ul id='sid-nav'>
 
+<!--
+  {% for item in site.menu %}
+  <li>
+    <a href='{{ item.link | absolute_url }}' class="navi">{{ item.label }}</a>
+  </li>
+  {% endfor %}
+-->
 
+  <li><a href="#stories" class="navi">Historias Orales</a></li>
+  <li><a href="#documents" class="navi">Documentos</a></li>
+  <li><a href="#maps" class="navi">Mapas</a></li>
+    <li><a href="#resources" class="navi">Recursos</a></li>
+</ul>
 
 <!--
     <div class='collapse navbar-collapse' id="wax-header-navbar">
@@ -30,4 +43,5 @@
       </ul>
     </div>
 -->
+
  </nav>
