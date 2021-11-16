@@ -1,47 +1,23 @@
 
-<nav id='bus-sidebar'>
 
-<a href="#home" class="navi" id="a-home">//</a>
+<sidebar>
+<nav class="navbar">
+<div class="hamburger">
+ 		<span class="bar"></span>
+ 		<span class="bar"></span>
+    <span class="bar"></span>
+</div>
 
-<ul id='sid-nav'>
+<a href="#" id="bus">buscadoras</a>
 
-<!--
-  {% for item in site.menu %}
-  <li>
-    <a href='{{ item.link | absolute_url }}' class="navi">{{ item.label }}</a>
-  </li>
-  {% endfor %}
--->
-
-  <li><a href="#stories" class="navi">Historias Orales</a></li>
-  <li><a href="#documents" class="navi">Documentos</a></li>
-  <li><a href="#maps" class="navi">Mapas</a></li>
-    <li><a href="#resources" class="navi">Recursos</a></li>
+<ul class="nav-menu">
+    <li><a href="#stories" target="_self">Historias</a></li>
+    <li><a href="#documents" target="_self">Documentos</a></li>
+    <li><a href="#map" target="_self">Mapas</a></li>
+    <li><a href="#resources" target="_self">Recursos</a></li>
 </ul>
+</nav>
 
-<!--
-    <div class='collapse navbar-collapse' id="wax-header-navbar">
-      <ul class='nav navbar-nav ml-auto justify-content-end'>
-        {% for item in site.menu %}
-          {% if item.sub %}
-            <li class='nav-item dropdown'>
-              <a class='nav-link dropdown-toggle' href='#' id='wax-{{ item.label | slugify }}-dropdown' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                {{ item.label }}
-              </a>
-              <div class='dropdown-menu' aria-labelledby='wax-{{ item.label | slugify }}-dropdown'>
-                {% for sub in item.sub %}
-                  <a class='dropdown-item' href='{{ sub.link | absolute_url }}'>{{ sub.label }}</a>
-                {% endfor %}
-              </div>
-            </li>
-          {% else %}
-            <li class='nav-item'>
-              <a class='nav-link' href='{{ item.link | absolute_url }}'>{{ item.label }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
--->
-
- </nav>
+<p class="nav-p">Traes en ti el recuerdo de otras vidas más altas.<br/><br/>
+<a href="#">Créditos</a></p>
+ </sidebar>
