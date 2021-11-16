@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang='en-us'>
+<html lang="en-us">
   {% include head.html %}
-<body>
-
-
-<!--
+  <body>
+    <!--
 {% include header.html %}
 -->
 
-<!--
+    <!--
     {% if page.banner %}
       {% assign b = page.banner %}
       {% include parallax_image.html collection=b.collection pid=b.pid y=b.y height=b.height image=b.image %}
     {% endif %}
 -->
 
-{% include sidebar.html %}
+    {% include sidebar.html %}
 
-<div id='bus-main'>
-  <h2 class='page-title'>{{ page.title }}</h2>
-  <div class="content-top">
-    <h1>Soñé que volvías.</h1>
-    <p>Finibus bonorum et malorum</p>
-    <span class="credits">author | meta info | date</span>
-  </div>
-  {{ content }}
-</div>
+    <div id="bus-main">
+      <h2 class="page-title">{{ page.title }}</h2>
+      <div class="content-top">
+        <h1>Soñé que volvías.</h1>
+        <p>Finibus bonorum et malorum</p>
+        <span class="credits">author | meta info | date</span>
+      </div>
+      {{ content }}
+    </div>
 
-
-
-
-<!--
+    <!--
 {% include footer.html %}
 -->
+  </body>
 
-</body>
-
-<script type='text/javascript' async defer src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
-<script type='text/javascript' async defer src='{{ "/assets/popper.min.js" | absolute_url }}'></script>
-
+  <script
+    type="text/javascript"
+    async
+    defer
+    src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'
+  ></script>
+  <script
+    type="text/javascript"
+    async
+    defer
+    src='{{ "/assets/popper.min.js" | absolute_url }}'
+  ></script>
 </html>
