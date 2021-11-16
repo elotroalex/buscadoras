@@ -56,8 +56,8 @@ sidebar {
 	width: 280px;
 	height: 100%;
 	position: fixed;
-	left:0;
-	top:0;
+	left: 0;
+	top: 0;
 	opacity: 1;
 	z-index: 4;
 }
@@ -83,16 +83,13 @@ p.nav-p {
 	position: absolute;
 	bottom: 0;
 }
-
 ul.nav-menu {
 		margin: 120px 0 0 0;
 		text-align: left;
 }
-
 ul.nav-menu li {
 	list-style: none;
 }
-
 .nav-menu li a:link,
 .nav-menu li a:visited,
 .nav-menu li a:active {
@@ -224,7 +221,6 @@ content section
     margin: 22px;
   }
   span.times {
-
   }
 }
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: buscadoras
+permalink: /buscadoras/
 ---
 
 
