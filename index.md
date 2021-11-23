@@ -1,15 +1,19 @@
 ---
-layout: page
+layout: main
 title: buscadoras
 ---
+
+
+
+<div class="content-container">
 
 <div class="archivo animatable fadeInUp" id="stories">
   <h3>Historias orales</h3>
   <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em> elit. Sed tristique maximus lacus, sed egestas quam feugiat sed. Aliquam erat volutpat. Vivamus pellentesque sollicitudin dolor, in luctus risus aliquam id. Curabitur maximus lacinia euismod. Integer in condimentum eros. Suspendisse pellentesque pulvinar vestibulum.</p>
 </div>
 
-<div class="archivo animatable fadeInUp">
-  <h4><span class="times">"</span>Vivamus pellentesque sollicitudin dolor, in luctus risus aliquam id. Curabitur maximus lacinia euismod. Integer in condimentum eros<span class="times">"</span></h4>
+<div id="quote" class="archivo animatable fadeInUp">
+  <h4>Una mujer que, tras años de buscar a su hija, por fin pudo sostener sus restos encontrados es una fosa clandestina.</h4>
 </div>
 
 <div class="archivo animatable fadeInUp" id="documents">
@@ -26,3 +30,5 @@ title: buscadoras
   <h3>Recursos & Directorio</h3>
   <p>Nunc tincidunt nisl eget elit iaculis porttitor. Pellentesque sit amet lorem fermentum enim auctor pulvinar. Sed lorem nibh, venenatis vitae ex sed, congue maximus nibh.</p>
 </div>
+
+</div> <!-- class="content-container" -->
