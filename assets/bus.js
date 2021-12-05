@@ -2,34 +2,34 @@
 
 
 
-jQuery(function($) {
 
+jQuery(function($) {
 var doAnimations = function() {
+
   var offset = $(window).scrollTop() + $(window).height(),
   $animatables = $('.animatable');
 
-	$animatables.each(function(i) {
+  $animatables.each(function(i) {
     var $animatable = $(this);
-    if (($animatable.offset().top + $animatable.height() + 50) < offset) {
+    if (($animatable.offset().top + $animatable.height() - 200) < offset) {
       if (!$animatable.hasClass('animate-in')) {
         $animatable.removeClass('animate-out').css('top', $animatable.css('top')).addClass('animate-in');
       }
-		} else if (($animatable.offset().top + $animatable.height() + 50) > offset) {
+		} else if (($animatable.offset().top + $animatable.height() - 200) > offset) {
       if ($animatable.hasClass('animate-in')) {
         $animatable.removeClass('animate-in').css('top', $animatable.css('top')).addClass('animate-out');
+
       }
     }
   });
 
-
-
-/* ---------------------------- */
-if (($('div#quote').offset().top + $('div#quote').height() + 50) < offset) {
-  $('div.bg_image').fadeIn(900);
-} else {
-  $('div.bg_image').fadeOut(300);
-}
-/* ---------------------------- */
+/*
+  if (($('#q_1').offset().top + $('#q_1').height() + 50) < offset) {
+    $('div.bg_green').fadeIn(600);
+  } else if (($('#q_1').offset().top + $('#q_1').height() + 50) > offset) {
+    $('div.bg_green').fadeOut(200);
+  }
+*/
 
 
 };
@@ -46,7 +46,6 @@ $(window).trigger('scroll');
 
 
 $(document).ready(function() {
-
 
   var turn = 1;
   $('.hamburger').click(function() {
@@ -83,12 +82,6 @@ if ($(window).width()<768) {
         });
       });
 }
-
-
-
-
-
-
 
 
 
