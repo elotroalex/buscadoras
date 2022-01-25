@@ -4,9 +4,6 @@ title: buscadoras
 ---
 
 
-<!--
-<div class="bg_green"></div>
--->
 
 <div class="content-container">
 <div id="q_1" class="quote" class="archivo animatable fadeInUp">

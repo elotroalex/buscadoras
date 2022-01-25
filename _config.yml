@@ -18,6 +18,7 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
+
 title:            'Buscadoras'
 description:      'Historias orales, recursos, mapas y andamiaje institucional'
 url:              'https://minicomp.github.io'
@@ -125,5 +126,28 @@ footer:
       link: '/contacto'
   logos:
     - img: '/img/logo.png'
+
+
+
+
+
+# --------------------------------------------------------------
+# POLYGLOT I18N LOCALIZATION
+# https://github.com/untra/polyglot
+# --------------------------------------------------------------
+#
+
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "es"]
+default_lang: "es"
+exclude_from_localization: ["img", "assets"]
+parallel_localization: true
+
+sass:
+    sourcemap: never
+
+
 
 # FIN
