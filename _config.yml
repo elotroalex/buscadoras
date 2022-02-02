@@ -18,12 +18,11 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-
 title:            'Buscadoras'
-description:      'Historias orales, recursos, mapas y andamiaje institucional'
+description:      'Testimonios orales, directorios, mapas y andamiaje institucional'
 url:              'https://minicomp.github.io'
 baseurl:          '/buscadoras'
-copyright:        'Copy Left, 2022'
+copyright:        'Copyleft, 2022'
 logo:             '/assets/logo.png'
 
 # ---------------------------------------------------------------
@@ -104,10 +103,12 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'Historias Orales'
-    link: '/historias/'
+  - label: 'Testimonios'
+    link: '/testimonios/'
   - label: 'Documentos'
     link: '/documentos/'
+  - label: 'Recursos'
+    link: '/recursos/'
   - label: 'Mapas'
     link: '/datavis/'
   - label: 'Directorio'
@@ -121,13 +122,9 @@ menu:
 footer:
   links:
     - label: 'Créditos'
-      link: '/credits'
-    - label: 'Contacto'
-      link: '/contacto'
+      link: '/credits/'
   logos:
     - img: '/img/logo.png'
-
-
 
 
 

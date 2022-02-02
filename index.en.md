@@ -1,9 +1,20 @@
 ---
 layout: main
 title: buscadoras
+permalink: /buscadoras/
+lang: en
 ---
 
-
+<div id="bus-main">
+  <h2 class="page-subtitle">Hasta encontrarte</h2>
+  <div class="content-top">
+    <h1>Bridging the<br/>
+      search.</h1>
+    <p>La búsqueda como una acción cotidiana de resistencia.</p>
+    <p>Buscadoras documentation project.</p>
+    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span> 
+  </div>
+</div>
 
 <div class="content-container">
 <div id="q_1" class="quote" class="archivo animatable fadeInUp">

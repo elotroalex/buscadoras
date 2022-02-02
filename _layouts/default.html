@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
   {% include head.html %}
-  <body>
-    {% include sidebar.html %}
-    <div class="content-container">
+<body>
 
+{% include sidebar.html %}
 
-      <h1>{{ page.title }}</h1>
+<div class="content-container">
 
+<h2>{{ page.title }}</h2>
       {{ content }}
-
-
-  </body>
 </div>
+
+
   <script
     type="text/javascript"
     async
@@ -25,4 +24,6 @@
     defer
     src='{{ "/assets/popper.min.js" | absolute_url }}'
   ></script>
+
+</body>
 </html>
