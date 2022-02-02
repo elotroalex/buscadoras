@@ -1,7 +1,7 @@
 ---
 layout: main
 title: buscadoras
-permalink: /buscadoras/
+permalink: /
 lang: en
 ---
 
@@ -12,7 +12,7 @@ lang: en
       search.</h1>
     <p>La búsqueda como una acción cotidiana de resistencia.</p>
     <p>Buscadoras documentation project.</p>
-    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span> 
+    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span>
   </div>
 </div>
 

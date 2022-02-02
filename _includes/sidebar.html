@@ -1,6 +1,9 @@
 
 <sidebar>
-<a href="{{ '/buscadoras/' | absolute_url }}" id="tit">{{ site.title }}</a>
+
+<a href="{{ '/' | absolute_url }}" id="tit">{{ site.title }}</a>
+
+
 
 <nav class="navbar">
 <ul class="nav-menu">
@@ -28,11 +31,25 @@
 </ul>
 </nav>
 
-<p class="nav-p">Center for Mexico and Central America | Columbia University<br/><br/>
+<p class="nav-p b120">
+  <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
+  {% for language in site.languages %}
+<a {% if language == site.active_lang %}style="font-size: 1.1rem;"{% endif %} {% static_href %}href="{% if language == site.default_lang %}{{ "" | absolute_url}}{{page.url}}{% else %}{{"" | absolute_url}}/{{ language }}{{page.url}}{% endif %}"{% endstatic_href %} >
+  {% for i in site.data.languages %}
+  {% if i.iso == language %}
+    {% assign language_name = i.description %}
+  {% endif%}
+{% endfor %}{{ language_name }}</a> {% unless forloop.last %}|{% endunless %}
+  {% endfor %}
+</p>
+
+
+<p class="nav-p b55">Center for Mexico and Central America | Columbia University<br/><br/>
 
 <a href="{{ '/credits/' | absolute_url }}" target="_self">
 {{ site.data[site.active_lang]["sidebar"].credits }}
 </a></p>
+
 
 
 <div class="hamburger activo">

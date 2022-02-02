@@ -87,12 +87,21 @@ p.nav-p {
 	padding: 0 36px 0 0;
 	position: absolute;
   left: 40px;
-	bottom: 55px;
+
   a:link {
     text-transform: uppercase;
     font-weight: 600;
   }
 }
+
+.b55 {
+  bottom: 55px;
+}
+
+.b120 {
+  bottom: 160px;
+}
+
 
 nav.navbar {
   width: 100%;
