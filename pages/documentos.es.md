@@ -7,4 +7,8 @@ lang: es
 
 Aquí ponemos el contenido en español.
 
-{% include collection_gallery.html collection='documentos' facet_by='document_category' %}
+{% for documento in site.documentos %}
+<p><strong>{{documento.label}}</strong><br>
+{{documento.brief_creators_summarySP}}<br>
+<a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">[Download]</a></p>
+{% endfor %}
