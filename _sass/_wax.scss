@@ -472,13 +472,13 @@ search box
       @extend .btn-outline-secondary;
       margin-right: .5em;
       margin-top: 1rem;
-      font-family: $heading-font;
-      border-color: $text-color;
+      font-family: $body-font;
+      border-color: none;
+
     }
     .active{
       @extend .facet;
-      background-color: $text-color;
-      color: $bg-color;
+      background-color: red;
     }
   }
   .wax-gallery {

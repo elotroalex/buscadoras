@@ -5,10 +5,14 @@ permalink: /documentos/
 lang: es
 ---
 
-Aquí ponemos el contenido en español.
-
 {% for documento in site.documentos %}
-<p><strong>{{documento.label}}</strong><br>
+
+<div class="docs animatable fadeInUp">
+<h3>{{documento.label}}</h3>
+<p>
 {{documento.brief_creators_summarySP}}<br>
-<a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">[Download]</a></p>
+<a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">[Download]</a>
+</p>
+</div>
+
 {% endfor %}

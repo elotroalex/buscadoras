@@ -6,24 +6,40 @@ lang: es
 ---
 
 <div id="bus-main">
+  <!--<h2 class="page-subtitle">Memoria Colectiva</h2>-->
   <h2 class="page-subtitle">Memoria Colectiva</h2>
   <div class="content-top">
-    <h1>Buscadoras.</h1>
+    <h1>Saberes para la búsqueda <br>de personas desaparecidas <br>en México.</h1>
+    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, soporte psico-social y protocolos para navegar las instituciones.</p><p>Estas son sus historias. ↓</p>
+    <!--<p>Este es un espacio para socializar la información, intercomunicación, el análisis crítico y la construcción de memoria colectiva.</p>
     <p>La búsqueda como una acción cotidiana de resistencia.</p>
     <p>Buscadoras documentation project.</p>
-    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span>
+    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span>-->
   </div>
 </div>
 
 
+
+
 <div class="content-container">
-<div id="q_1" class="quote" class="archivo animatable fadeInUp">
-  <h4>Los colectivos de buscadoras han desarrollado métodos de búsqueda, soporte psico-social y protocolos para navegar las instituciones.</h4>
+
+
+<div class="archivo animatable fadeInUp">
+  <h3>Memoria Colectiva</h3>
+  <div class="main_full_img">
+    <img src="{{ '/assets/images/6C2A0942.jpg' | absolute_url }}" />
+  </div>
+</div>
+
+
+<div id="q_1" class="quote" class="archivo archivo_dark animatable fadeInUp">
+  <h3>Buscadoras</h3>
+  <h4>“Ella siempre andaba con el pico y la pala al hombro”</h4>
 </div>
 
 
 <div class="archivo animatable fadeInUp" id="stories">
-<h3>Historias orales</h3>
+<h3>Testimonios orales</h3>
 <div class="row">
   <div class="column">  <div class="main_img"></div>  </div>
   <div class="double-column">

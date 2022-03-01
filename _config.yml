@@ -134,7 +134,6 @@ footer:
     - img: '/img/logo.png'
 
 
-
 # --------------------------------------------------------------
 # POLYGLOT I18N LOCALIZATION
 # https://github.com/untra/polyglot
@@ -151,7 +150,5 @@ parallel_localization: true
 
 sass:
     sourcemap: never
-
-
 
 # FIN

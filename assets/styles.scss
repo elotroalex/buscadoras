@@ -10,7 +10,8 @@ $logo: url("{{ '/assets/logo.png' | absolute_url }}");
 
 /* text */
 
-$heading-font:    'Libre Baskerville', 'sans-serif';
+/*$heading-font:    'Libre Baskerville', 'sans-serif';*/
+$heading-font:    'DM Serif Display', serif;
 $body-font:       'Inter', 'sans-serif';
 
 /* Image Size */
@@ -20,16 +21,16 @@ $thumbnail-width: 140px;
 
 /* colors */
 
-$text-color:      #1E212B;
-$bg-color:        #F4F8FA;
-$neutral:         #EBEBEB;
+$text-color:      #373737;
+$bg-color:        #FAFCF7;
+$neutral:         #ECEAE0;
 
-/*
-$accent-light-ultra-ultra:    #d2e9ea;
-$accent-light-ultra:    #a0d5d5;
-*/
-$accent-light:    #C1EBE4;
-$accent-dark:     #008A80;
+$tierra:          #A29690;
+$tierra:          #8C827D;
+$cielo:           #E2EEF7;
+
+$accent-dark:     #5CA64F;
+$accent-light:    #D3EFD4;
 
 /* viewport sizes */
 
@@ -49,6 +50,6 @@ $footer-height:   250px;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
 @import 'bus';

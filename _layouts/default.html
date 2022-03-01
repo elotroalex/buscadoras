@@ -5,21 +5,25 @@
 
 {% include sidebar.html %}
 
-<div class="content-container">
 
-<h2>{{ page.title }}</h2>
-      {{ content }}
+<div id="bus-main">
+
+<h2 class="page-subtitle">{{ page.title }}</h2>
+<br/><br/>
+{{ content }}
+
 </div>
 
 
-  <script
-    type="text/javascript"
-    async
-    defer
-    src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'
-  ></script>
-  <script
-    type="text/javascript"
+
+
+
+<script type="text/javascript"
+  async
+  defer
+  src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
+
+<script type="text/javascript"
     async
     defer
     src='{{ "/assets/popper.min.js" | absolute_url }}'
