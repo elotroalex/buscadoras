@@ -5,40 +5,42 @@ permalink: /
 lang: es
 ---
 
+
 <div id="bus-main">
-  <!--<h2 class="page-subtitle">Memoria Colectiva</h2>-->
-  <h2 class="page-subtitle">Memoria Colectiva</h2>
+  <h2 class="page-subtitle">No están solas</h2>
   <div class="content-top">
-    <h1>Saberes para la búsqueda <br>de personas desaparecidas <br>en México.</h1>
-    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, soporte psico-social y protocolos para navegar las instituciones.</p><p>Estas son sus historias. ↓</p>
-    <!--<p>Este es un espacio para socializar la información, intercomunicación, el análisis crítico y la construcción de memoria colectiva.</p>
-    <p>La búsqueda como una acción cotidiana de resistencia.</p>
-    <p>Buscadoras documentation project.</p>
-    <span class="credits">Greg Odum | Álex Gil | Mónica Trigos</span>-->
+    <h1>Saberes para <br>la búsqueda de <br><span class="color-brick">personas desaparecidas</span><br>en México.</h1>
+    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, soporte psico-social y protocolos para navegar las instituciones. Estas son sus historias. <span class="color-brick">↓</span></p>
   </div>
 </div>
 
 
 
-
+<!--
+<div class="bg-image animatable fadeInUp">
 <div class="content-container">
 
+<div class="archivo">
+<h3>Buscadoras</h3>
+<h4>“Ella siempre andaba con el pico y la pala al hombro”</h4>
+</div>
 
+</div>
+</div>
+-->
+
+<!--
 <div class="archivo animatable fadeInUp">
   <h3>Memoria Colectiva</h3>
   <div class="main_full_img">
     <img src="{{ '/assets/images/6C2A0942.jpg' | absolute_url }}" />
   </div>
 </div>
+-->
 
+<div class="content-container">
 
-<div id="q_1" class="quote" class="archivo archivo_dark animatable fadeInUp">
-  <h3>Buscadoras</h3>
-  <h4>“Ella siempre andaba con el pico y la pala al hombro”</h4>
-</div>
-
-
-<div class="archivo animatable fadeInUp" id="stories">
+<div class="archivo animatable fadeInUp" id="stories" data-color="neutro">
 <h3>Testimonios orales</h3>
 <div class="row">
   <div class="column">  <div class="main_img"></div>  </div>
@@ -49,12 +51,22 @@ lang: es
 </div>  
 </div>
 
+</div><!-- content-container -->
 
-<div class="quote" class="archivo animatable fadeInUp">
-  <h4>Una mujer que, tras años de buscar a su hija, por fin pudo sostener sus restos encontrados es una fosa clandestina.</h4>
+
+<div class="quote animatable fadeInUp" data-color="tierra">
+<div class="content-container">
+  <h4>"Mover piedras y seguir buscando"</h4>
+</div>
 </div>
 
-<div class="archivo animatable fadeInUp" id="documents">
+
+
+
+<div class="content-container">
+
+
+<div class="archivo animatable fadeInUp" id="documents" data-color="neutro">
   <h3>Documentos</h3>
   <div class="row">
   <div class="column">  <div class="main_img"></div>  </div>
@@ -64,14 +76,14 @@ lang: es
   </div>
 </div>
 
-<div class="archivo animatable fadeInUp" id="maps">
+<div class="archivo animatable fadeInUp" id="maps"  data-color="sky">
   <h3>Mapas & Visualizaciones</h3>
   <p>Duis et varius urna. Nullam sed diam id lectus euismod hendrerit eu sed nulla. Ut ante odio, vestibulum ac posuere sit amet, suscipit id urna. Morbi vitae dapibus nunc. Donec nulla turpis, fermentum ut quam et, blandit fermentum dolor. Nunc consequat sed libero vitae sagittis.</p>
   <a href="">Read more</a><br/><br/>
   <div class="main_full_img"></div>
 </div>
 
-<div class="archivo animatable fadeInUp" id="resources">
+<div class="archivo animatable fadeInUp" id="resources" data-color="neutro">
   <h3>Recursos & Directorio</h3>
   <p>Nunc tincidunt nisl eget elit iaculis porttitor. Pellentesque sit amet lorem fermentum enim auctor pulvinar. Sed lorem nibh, venenatis vitae ex sed, congue maximus nibh.</p>
 </div>

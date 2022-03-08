@@ -5,7 +5,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $neutral;
   font-family: $body-font;
   font-display: auto;
   -webkit-font-smoothing: antialiased;
@@ -13,13 +12,36 @@ html, body {
   word-wrap: break-word;
 }
 
+body {
+  background-image: url("http://localhost:4000/buscadoras/assets/images/subtract.svg");
+  background-repeat: no-repeat;
+  background-position: 100% -10%;
+  background-size:24%;
+  background-attachment: fixed;
+  background-color: $neutral;
+  transition: background-color 1s ease;
+}
+
+
+
+::selection {
+  color: $tierra;
+  background: $bg-color;
+}
+
 h2, h3, h4, h5,
 .h2, .h3, .h4, .h5 {
   font-family: $body-font;
 }
 
+h4 {
+  font-family: $heading-font;
+  color: $neutral;
+  font-size: 3.6em;
+}
+
 a:link, a:visited, a:active {
-  color: $text-color;
+  color: $brick;
   text-decoration: none;
 }
 
@@ -38,22 +60,32 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-h3 {
-  font-family: $heading-font;
-  color: #634E31;
-  font-size: 1.8em;
-  margin: 0 0 18px 0;
+
+
+
+
+
+.color-brick{
+  color: $brick;
 }
 
+.color-tierra {
+  background-color: $tierra;
+}
 
+.color-green {
+  background-color: $accent-light;
+}
 
+.color-neutro {
+  background-color: $neutral;
+}
 
+.color-sky {
+  background-color: #E2EEF7;
+}
 
-
-
-/*
-  SIDEBAR
-*/
+/*–––––––––––––––––––––––––––––––––––––––– SIDEBAR ––––––––––––––––––––––––––––––––––––––––*/
 
 sidebar {
 	background-color: $tierra;
@@ -63,10 +95,10 @@ sidebar {
 	left: 0;
 	top: 0;
 	z-index: 99;
-  /*background-image: url("http://localhost:4000/buscadoras/assets/images/diagonal.svg");
+/*  background-image: url("http://localhost:4000/buscadoras/assets/images/diagonal.svg");
   background-repeat: no-repeat;
-  background-position: 100% 70%;
-  background-size: 50%;*/
+  background-position: 50% 70%;
+  background-size: 50%; */
 }
 
 a#tit {
@@ -77,13 +109,14 @@ a#tit {
   line-height: auto;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: $neutral;
 }
 
 a#tit:hover {
 	border: none;
   text-decoration: none;
+  color: $accent-light;
 }
 
 p.nav-p {
@@ -96,13 +129,13 @@ p.nav-p {
   left: 40px;
   bottom: 40px;
   color: $neutral;
-  a:link {
+  a:link, a:visited, a:active {
     text-transform: uppercase;
     font-weight: 600;
-    color: $neutral;
+    color: $accent-light;
   }
   a:hover {
-    color: $accent-light;
+    color: $neutral;
   }
 }
 
@@ -110,7 +143,7 @@ p.nav-p {
 
 nav.navbar {
   width: 100%;
-  margin: 120px 0 0 0;
+  margin: 100px 0 0 0;
 }
 
 ul.nav-menu {
@@ -129,17 +162,17 @@ ul.nav-menu li {
 .nav-menu li a:link,
 .nav-menu li a:visited,
 .nav-menu li a:active {
-  padding: 8px 0;
+  padding: 6px 0;
   text-decoration: none;
 	border-bottom: none;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   display: block;
-  color: $neutral;
+  color: $accent-light;
 }
 
 .nav-menu li a:hover {
-  color: $accent-light;
+  color: $neutral;
 }
 
 .nav-menu li a.activo {
@@ -247,22 +280,23 @@ a#tit {
 
 
 
-/*
+/*––––––––––––––––––––––––––––––––––––––––
 MAIN
-*/
+––––––––––––––––––––––––––––––––––––––––*/
 
 #bus-main {
-  width: 70%;
+  width: 76%;
   position: relative;
   left: 22%;
   z-index: 90;
 
   h1 {
     font-family: $heading-font;
-    font-size: 4.2em;
+    font-size: 5.8em;
+    line-height: 1.2em;
     color: $accent-dark;
-    font-weight: 700;
-    margin: 0 0 40px 0;
+    font-weight: 500;
+    margin: 0 0 50px 0;
   }
 
   h2.page-subtitle {
@@ -275,14 +309,10 @@ MAIN
   }
 
   .content-top {
-    margin: 40px 0 0px 0;
+    margin: 40px 0 90px 0;
     p {
-      font-size: 1.6em;
-      line-height: 1.2em;
-    }
-    span.credits {
-      margin: 18px 0;
-      font-size: 16px;
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 }
@@ -314,21 +344,12 @@ MAIN
 
 
 
-/*
-DOCUMENTOS
-*/
-
-div.docs {
-  margin: 32px 0;
-  width: 80%;
-}
 
 
-
-
-/*
+/*––––––––––––––––––––––––––––––––––––––––
 CONTENT
-*/
+––––––––––––––––––––––––––––––––––––––––*/
+
 
 .content-container {
   width: 70%;
@@ -340,8 +361,22 @@ CONTENT
   padding: 0 0 90px 0;
 }
 
+.bg-image {
+  background: yellow;
+  background-image: url("images/bgG8L9s1bYKc.jpg");
+  background-size: 100%;
+  display: block;
+  min-height: 100%;
+}
+
+
+.quote {
+  width: 100%;
+}
+
+
 .archivo {
-  margin: 90px 0;
+  margin: 60px 0;
   h3 {
     margin: 0 0 32px 0;
     font-size: 14px;
@@ -382,6 +417,9 @@ div.main_full_img {
     max-width: 100%;
   }
 }
+
+
+
 
 
 
@@ -437,6 +475,13 @@ div.main_full_img {
 }
 
 
+
+
+/*––––––––––––––––––––––––––––––––––––––––*/
+div.docs {
+  margin: 32px 0;
+  width: 80%;
+}
 
 
 

@@ -25,11 +25,11 @@ $text-color:      #373737;
 $bg-color:        #FAFCF7;
 $neutral:         #ECEAE0;
 
-$tierra:          #A29690;
 $tierra:          #8C827D;
 $cielo:           #E2EEF7;
+$brick:           #E66D4B;
 
-$accent-dark:     #5CA64F;
+$accent-dark:     #428270;
 $accent-light:    #D3EFD4;
 
 /* viewport sizes */
@@ -51,5 +51,5 @@ $footer-height:   250px;
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import 'bus';
