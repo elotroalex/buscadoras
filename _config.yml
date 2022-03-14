@@ -110,6 +110,8 @@ search:
 # submenu via `sub`.
 
 menu:
+  - label: 'Herramientas'
+    link: '/herramientas/'
   - label: 'Testimonios'
     link: '/testimonios/'
   - label: 'Documentos'
@@ -120,6 +122,8 @@ menu:
     link: '/datavis/'
   - label: 'Directorio'
     link: '/directorio/'
+  - label: 'Tesoros'
+    link: '/tesoros/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS

@@ -1,14 +1,15 @@
 
-
-
-
 <sidebar>
 
-<a href="{{ '/' | absolute_url }}" id="tit">{{ site.title }}</a>
+<!--<a href="{{ '/' | absolute_url }}" id="name">{{ site.title }}</a>-->
+<a href="{{ '/' | absolute_url }}" id="name">No están solas</a>
 
 <nav class="navbar">
 <ul class="nav-menu">
-    <li><a href="{{ '/testimonios/' | absolute_url }}" target="_self"> <!--class="activo"-->
+    <li><a href="{{ '/tools/' | absolute_url }}" target="_self"><!--class="activo"-->
+      {{ site.data[site.active_lang]["sidebar"].tools }}
+    </a></li>
+    <li><a href="{{ '/testimonios/' | absolute_url }}" target="_self">
       {{ site.data[site.active_lang]["sidebar"].testimonies }}
     </a></li>
     <li><a href="{{ '/documentos/' | absolute_url }}" target="_self">
@@ -23,12 +24,14 @@
     <li><a href="{{ '/directorio/' | absolute_url }}" target="_self">
       {{ site.data[site.active_lang]["sidebar"].directory }}
     </a></li>
+    <li><a href="{{ '/tesoros/' | absolute_url }}" target="_self">
+      {{ site.data[site.active_lang]["sidebar"].tesoros }}
+    </a></li>
 </ul>
 </nav>
 
 
-
-<p class="nav-p b55">Center for Mexico and Central America | Columbia University<br/><br/>
+<p class="nav-p b55">This project is supported by a grant from the Brown Institute for Media Innovation.<br/><br/>
 
 <a href="{{ '/credits/' | absolute_url }}" target="_self">
 {{ site.data[site.active_lang]["sidebar"].credits }}
@@ -45,6 +48,7 @@
 {% endfor %}{{ language_name }}</a> {% unless forloop.last %}|{% endunless %}
   {% endfor %}
 </p>
+
 
 
 <div class="hamburger activo">

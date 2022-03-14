@@ -1,10 +1,8 @@
 
 jQuery(function($) {
 var doAnimations = function() {
-
   var offset = $(window).scrollTop() + $(window).height(),
   $animatables = $('.animatable');
-
   $animatables.each(function(i) {
     var $animatable = $(this);
     if (($animatable.offset().top + $animatable.height() - 200) < offset) {
@@ -14,22 +12,17 @@ var doAnimations = function() {
 		} else if (($animatable.offset().top + $animatable.height() - 200) > offset) {
       if ($animatable.hasClass('animate-in')) {
         $animatable.removeClass('animate-in').css('top', $animatable.css('top')).addClass('animate-out');
-
       }
     }
   });
-
 };
-
 
 $(window).on('scroll', doAnimations);
   $(window).trigger('scroll');
 });
 
 
-
 $(document).ready(function() {
-
   var turn = 1;
   $('.hamburger').click(function() {
       $(this).toggleClass("activo");
@@ -51,7 +44,6 @@ $(document).ready(function() {
         });
       }
   });
-
 
 if ($(window).width()<768) {
       $('ul.nav-menu li a').click(function() {
@@ -81,10 +73,12 @@ $(window).scroll(function() {
   // selectors
   var $window = $(window),
       $body = $('body'),
-      $panel = $('.animatable');
+      $panel = $('.panel');
 
   // Change 33% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop() + ($window.height() / 3);
+  // var scroll = $window.scrollTop();
+
 
   $panel.each(function () {
     var $this = $(this);

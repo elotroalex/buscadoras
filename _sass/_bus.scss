@@ -13,19 +13,17 @@ html, body {
 }
 
 body {
-  background-image: url("http://localhost:4000/buscadoras/assets/images/subtract.svg");
+  background-image: url("images/subtract.svg");
   background-repeat: no-repeat;
-  background-position: 100% -10%;
+  background-position: 110% -10%;
   background-size:24%;
   background-attachment: fixed;
-  background-color: $neutral;
+  background-color: $neutro;
   transition: background-color 1s ease;
 }
 
-
-
 ::selection {
-  color: $tierra;
+  color: $earth;
   background: $bg-color;
 }
 
@@ -36,8 +34,8 @@ h2, h3, h4, h5,
 
 h4 {
   font-family: $heading-font;
-  color: $neutral;
-  font-size: 3.6em;
+  color: $bg-color;
+  font-size: 4.2em;
 }
 
 a:link, a:visited, a:active {
@@ -46,15 +44,15 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
-  color: $accent-dark;
-  text-decoration: none;
+  color: $green-dark;
+  text-decoration: underline;
   transition: 0.3s;
 }
 
 p {
   color: $text-color;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.65rem;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -62,46 +60,57 @@ p {
 
 
 
-
+.panel {
+  min-height: 20px;
+}
 
 
 .color-brick{
   color: $brick;
 }
 
-.color-tierra {
-  background-color: $tierra;
-}
-
-.color-green {
-  background-color: $accent-light;
+.color-bgcolor {
+  background-color: $bg-color;
 }
 
 .color-neutro {
-  background-color: $neutral;
+  background-color: $neutro;
+}
+
+.color-earth {
+  background-color: $earth;
+}
+
+.color-green {
+  background-color: $green-light;
 }
 
 .color-sky {
-  background-color: #E2EEF7;
+  background-color: $sky;
 }
+
+
+
+
+
+
+
+
+
 
 /*–––––––––––––––––––––––––––––––––––––––– SIDEBAR ––––––––––––––––––––––––––––––––––––––––*/
 
 sidebar {
-	background-color: $tierra;
+	background-color: $earth;
 	width: 260px;
 	height: 100%;
 	position: fixed;
 	left: 0;
 	top: 0;
 	z-index: 99;
-/*  background-image: url("http://localhost:4000/buscadoras/assets/images/diagonal.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 70%;
-  background-size: 50%; */
 }
 
-a#tit {
+a#name {
 	position: absolute;
 	top: 36px;
 	left: 36px;
@@ -110,32 +119,33 @@ a#tit {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: $neutral;
+  color: $bg-color;
 }
 
-a#tit:hover {
+a#name:hover {
 	border: none;
   text-decoration: none;
-  color: $accent-light;
+  color: $green-light;
 }
 
 p.nav-p {
 	font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
 	font-weight: 600;
 	text-align: left;
 	padding: 0 36px 0 0;
 	position: absolute;
   left: 40px;
   bottom: 40px;
-  color: $neutral;
+  color: $neutro;
   a:link, a:visited, a:active {
     text-transform: uppercase;
     font-weight: 600;
-    color: $accent-light;
+    color: $earth-dark;
+    text-decoration: underline;
   }
   a:hover {
-    color: $neutral;
+    color: $green-light;
   }
 }
 
@@ -165,18 +175,18 @@ ul.nav-menu li {
   padding: 6px 0;
   text-decoration: none;
 	border-bottom: none;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 500;
   display: block;
-  color: $accent-light;
+  color: $green-light;
 }
 
 .nav-menu li a:hover {
-  color: $neutral;
+  color: $bg-color;
 }
 
 .nav-menu li a.activo {
-  color: $accent-dark;
+  color: $green-dark;
   font-weight: 500;
 }
 
@@ -187,9 +197,9 @@ ul.nav-menu li {
 .bar {
     display: block;
     width: 20px;
-    height: 3px;
-    margin: 3px auto;
-		background-color: $text-color;
+    height: 2px;
+    margin: 4px auto;
+		background-color: $neutro;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -228,8 +238,8 @@ sidebar {
 	height: 48px;
 }
 
-a#tit {
-  	top: 12px;
+a#name {
+  	top: 16px;
   	left: 18px;
   }
 
@@ -284,7 +294,7 @@ a#tit {
 MAIN
 ––––––––––––––––––––––––––––––––––––––––*/
 
-#bus-main {
+#cover {
   width: 76%;
   position: relative;
   left: 22%;
@@ -294,7 +304,7 @@ MAIN
     font-family: $heading-font;
     font-size: 5.8em;
     line-height: 1.2em;
-    color: $accent-dark;
+    color: $green-dark;
     font-weight: 500;
     margin: 0 0 50px 0;
   }
@@ -326,16 +336,20 @@ MAIN
 
 
 @media only screen and (max-width: 768px) {
-  #bus-main {
-    width: 80%;
-    left: 10%;
-    top: 22px;
+  #cover {
+    width: 90%;
+    left: 5%;
+    top: 18px;
     h1 {
-      font-size: 4.2em;
-      margin: 0 0 60px 0;
+      font-size: 2.6em;
+      line-height: 1.1em;
+      margin: 0 0 30px 0;
     }
     h2.page-subtitle {
       margin: 60px 0 0 0;
+    }
+    .content-top {
+      margin: 30px 0 60px 0;
     }
   }
 
@@ -350,7 +364,6 @@ MAIN
 CONTENT
 ––––––––––––––––––––––––––––––––––––––––*/
 
-
 .content-container {
   width: 70%;
   display: flex;
@@ -358,7 +371,7 @@ CONTENT
   position: relative;
   left: 22%;
   z-index: 98;
-  padding: 0 0 90px 0;
+  padding: 0 0 0 0;
 }
 
 .bg-image {
@@ -369,14 +382,14 @@ CONTENT
   min-height: 100%;
 }
 
-
 .quote {
   width: 100%;
+  padding: 60px 30px 0 50px;
+  margin: 0 0 60px 0;
 }
 
-
 .archivo {
-  margin: 60px 0;
+  margin: 60px 0 90px 0;
   h3 {
     margin: 0 0 32px 0;
     font-size: 14px;
@@ -393,7 +406,7 @@ CONTENT
 }
 
 .archivo_dark {
-  background: $cielo;
+  background: $sky;
   padding: 24px;
   h4 {
     font-family: $heading-font;
@@ -450,14 +463,11 @@ div.main_full_img {
 
 @media only screen and (max-width: 768px) {
   .content-container {
-    width: 80%;
-    left: 10%;
+    width: 90%;
+    left: 5%;
   }
   .row {
     flex-direction: column;
-  }
-  .column, .double-column {
-
   }
   .archivo {
     margin: 28px 0;
@@ -482,6 +492,8 @@ div.docs {
   margin: 32px 0;
   width: 80%;
 }
+
+
 
 
 
@@ -546,7 +558,7 @@ PURO WAX
     }
 
     .inline-image-reference {
-      background-color: $neutral;
+      background-color: $neutro;
       margin-top: $more-margin;
       margin-bottom: $more-margin;
       display: inline-block;
@@ -571,7 +583,7 @@ PURO WAX
   width: 100vw;
   padding-bottom: 5rem;
   padding-top: 3rem;
-  background-color: $neutral;
+  background-color: $neutro;
   col {
     flex-basis: 0;
     flex-shrink: 0;
@@ -645,7 +657,7 @@ PURO WAX
 .wax-parallax {
 
   .parallax-image {
-    background-color: $neutral;
+    background-color: $neutro;
     width: 100vw;
     height: $parallax-height;
     max-height: 55vh;
@@ -656,17 +668,17 @@ PURO WAX
   .parallax-caption {
     margin: 0 auto;
     width: 100vw;
-    background-color: $neutral;
+    background-color: $neutro;
     padding: $less-margin 0;
     a {
-      color: $accent-light;
+      color: $green-light;
       font-weight: 700;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
-      color: $accent-dark;
+      color: $green-dark;
     }
   }
 }
@@ -689,9 +701,9 @@ item pages (iiif + metadata)
     text-align: center;
     height:   $viewer-height;
     max-height: 80vh;
-    background-color: $neutral;
+    background-color: $neutro;
     width:    100%;
-    border:   1px solid $neutral;
+    border:   1px solid $neutro;
     margin:   $more-margin 0 $more-margin 0;
 
     a {
@@ -722,7 +734,7 @@ item pages (iiif + metadata)
       background-color: $bg-color;
       margin: 0;
       &:hover{
-        color: $accent-dark !important;
+        color: $green-dark !important;
       }
     }
   }
@@ -738,7 +750,7 @@ item pages (iiif + metadata)
 .metadata-block {
   font-family: $body-font;
   max-width: 100%;
-  border: $neutral 1px solid;
+  border: $neutro 1px solid;
   border-radius: 3px;
   padding: $less-margin;
 }
@@ -758,7 +770,7 @@ search box
     margin-bottom: $more-margin;
     &:focus {
         box-shadow: none ;
-        border-color: $neutral;
+        border-color: $neutro;
     }
   }
   #results {
@@ -780,12 +792,12 @@ search box
           margin: 0 !important;
           padding: 0;
           .title{
-            color: $accent-light;
+            color: $green-light;
           }
         }
       }
       &:hover {
-        background-color: $neutral
+        background-color: $neutro
       }
     }
   }
@@ -824,7 +836,7 @@ search box
       background-color: #ffffff;
       max-height: $thumbnail-height;
       max-width: $thumbnail-width;
-      border: 1px $tierra solid;
+      border: 1px $earth solid;
 
       .gallery-thumb {
         object-position: 50% 20%;
@@ -899,7 +911,7 @@ search box
           overflow: hidden;
           top: 0;
           left: 0;
-          background-color: $accent-light;
+          background-color: $green-light;
           opacity: 0;
           -webkit-transition:opacity 0.5s ease-in-out;
           transition: opacity 0.5s ease-in-out;
