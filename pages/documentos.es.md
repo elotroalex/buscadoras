@@ -11,7 +11,11 @@ lang: es
 <h3>{{documento.label}}</h3>
 <p>
 {{documento.brief_creators_summarySP}}<br>
-<a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">[Download]</a>
+    <div class="download-button">
+    <button class="btn download">
+        <a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">{{ site.data[site.active_lang]["global"].download }}</a>
+    </button>
+    </div>
 </p>
 </div>
 

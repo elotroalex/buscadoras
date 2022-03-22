@@ -752,12 +752,43 @@ item pages (iiif + metadata)
   
 }
 
+.download-button {
+  .download {
+    @extend .btn-outline-secondary;
+    background-color: #D3EFD4;
+    color: $text-color;
+    border: solid;
+    border-color: gray;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  button.download:hover a {
+    color: white;
+  }
+  
+  a {
+    color: $text-color;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  
+}
+
 .metadata-block {
   font-family: $body-font;
   max-width: 100%;
   border: $neutro 1px solid;
   border-radius: 3px;
   padding: $less-margin;
+
+  dt {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
 }
 
 /*
