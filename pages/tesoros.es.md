@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Herramientas
+title: Tesoros
 permalink: /tesoros/
 lang: es
 ---
