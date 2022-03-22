@@ -13,7 +13,7 @@ lang: es
 {{documento.brief_creators_summarySP}}<br>
     <div class="download-button">
     <button class="btn download">
-        <a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf">{{ site.data[site.active_lang]["global"].download }}</a>
+        <a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf" target="_blank">{{ site.data[site.active_lang]["global"].download }}</a>
     </button>
     </div>
 </p>

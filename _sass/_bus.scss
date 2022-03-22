@@ -917,12 +917,13 @@ search box
           -webkit-transform: scale(0);
           -ms-transform: scale(0);
           transform: scale(0);
-          font-weight: normal;
-          font-size: .9rem;
+          font-weight: 600;
+          font-size: 1rem;
           line-height: 1rem;
           overflow: hidden;
           display: table-cell;
-          padding: .4rem;
+          margin-top: 2rem;
+          padding: .5rem;
           vertical-align: center;
         }
 
