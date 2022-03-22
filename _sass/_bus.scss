@@ -825,6 +825,8 @@ search box
     }
     .active{
       @extend .facet;
+      border-style: solid;
+      border: gray;
 
     }
   }
