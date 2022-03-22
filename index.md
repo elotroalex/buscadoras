@@ -9,9 +9,13 @@ lang: es
   <h2 class="page-subtitle">{{ site.title }}</h2>
   <div class="content-top">
     <h1>Saberes para <br>la búsqueda de <br><span class="color-brick">personas desaparecidas</span><br>en México.</h1>
-    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones. Estas son sus historias. <span class="color-brick">↓</span></p>
+    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones. Estas son sus historias. <span class="color-brick" style="font-weight:600;">↓</span></p>
   </div>
 </div>
+
+
+
+
 
 <div class="panel" data-color="neutro"></div>
 

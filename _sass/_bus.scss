@@ -129,11 +129,11 @@ a#name:hover {
 }
 
 p.nav-p {
-	font-size: 12px;
-  line-height: 16px;
+	font-size: 14px;
+  line-height: 18px;
 	font-weight: 600;
 	text-align: left;
-	padding: 0 36px 0 0;
+	padding: 0 38px 0 0;
 	position: absolute;
   left: 40px;
   bottom: 40px;
@@ -321,8 +321,8 @@ MAIN
   .content-top {
     margin: 40px 0 90px 0;
     p {
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 26px;
+      line-height: 36px;
     }
   }
 }
@@ -721,7 +721,7 @@ item pages (iiif + metadata)
   align-items:     center;
   margin-left:     -5%;
 
-  
+
 
   .image-viewer {
     position: relative;
@@ -749,7 +749,7 @@ item pages (iiif + metadata)
   }
 
 
-  
+
 }
 
 .download-button {
