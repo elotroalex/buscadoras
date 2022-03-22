@@ -894,7 +894,7 @@ search box
 
         &:hover {
           .overlay {
-            opacity: .7;
+            opacity: .8;
             cursor: pointer;
             .info {
               opacity: 1;
@@ -922,8 +922,7 @@ search box
           line-height: 1rem;
           overflow: hidden;
           display: table-cell;
-          margin-top: 2rem;
-          padding: .5rem;
+          padding: 1.5rem;
           vertical-align: center;
         }
 
