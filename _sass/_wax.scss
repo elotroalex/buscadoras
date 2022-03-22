@@ -349,6 +349,30 @@ content section
 item pages (iiif + metadata)
 
 */
+.pagination-link {
+  width: 5%;
+  text-align: center;
+  a {
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: 3em;
+    color: $text-color !important;
+    text-decoration: none !important;
+    background-color: transparent;
+    margin: 0;
+    &:hover{
+      color: $accent-dark !important;
+    }
+  }
+}
+
+#prevlink {
+  float:left;
+}
+.nextlink {
+  float: right;
+}
+
 .item-view {
   width:           110%;
   display:         inline-flex;
@@ -383,29 +407,7 @@ item pages (iiif + metadata)
   }
 
 
-  .pagination-link {
-    width: 5%;
-    text-align: center;
-    a {
-      font-family: $heading-font;
-      font-weight: bold;
-      font-size: 3em;
-      color: $text-color !important;
-      text-decoration: none !important;
-      background-color: $bg-color;
-      margin: 0;
-      &:hover{
-        color: $accent-dark !important;
-      }
-    }
-  }
-
-  #prevlink {
-    float:left;
-  }
-  .nextlink {
-    float: right;
-  }
+  
 }
 
 .metadata-block {
