@@ -5,7 +5,6 @@ permalink: /
 lang: es
 ---
 
-
 <div id="cover">
   <h2 class="page-subtitle">{{ site.title }}</h2>
   <div class="content-top">
@@ -20,7 +19,12 @@ lang: es
 <div class="archivo animatable fadeInUp" id="stories">
 <h3>Herramientas</h3>
 <div class="row">
-  <div class="column">  <div class="main_img"></div>  </div>
+
+  <div class="column">  
+  <div class="main_img">
+  <img src="assets/images/6C2A0616.jpg">
+  </div>  
+  </div>
 
   <div class="double-column">
   <br/><p>Familiares comparten sus saberes acerca de: los primeros pasos en la desaparición, la búsqueda en sentido práctico (métodos, herramientas, la identificación) y en sentido personal (emocional y vivencial), la recolección de información y documentación, la relación con autoridades, la seguridad, el autocuidado, el sentido de comunidad y el actuar en colectivo, la resiliencia y transformación personal.</p>
@@ -80,7 +84,13 @@ lang: es
 <div class="archivo">
   <h3>Testimonios</h3>
   <div class="row">
-  <div class="column">  <div class="main_img"></div>  </div>
+
+  <div class="column">
+  <div class="main_img">
+  <img src="assets/images/6C2A1100.jpg">
+  </div>
+  </div>
+
   <div class="double-column">
   <br/><br/><p>Relatos de vida de Buscadoras de México y Estados Unidos.</p>
   <a href="{{ '/testimonios/' | absolute_url }}">Leer más</a>
@@ -110,7 +120,11 @@ lang: es
   <h3>Mapas & Visualizaciones</h3>
   <p>En esta sección encontrarás un mapa con los colectivos existentes en México por estado, con su información de contacto. Además trabajamos en mostrar una mirada más profunda a variables de percepción de violencia en México, organización comunitaria, violencia por municipio de 2015 a 2021.</p>
   <a href="{{ '/datavis/' | absolute_url }}">Leer más</a>
-  <div class="main_full_img"></div>
+
+  <div class="main_full_img">
+  <img src="assets/images/bgG8L9s1bYKc.jpg">
+  </div>
+
 </div>
 
 
