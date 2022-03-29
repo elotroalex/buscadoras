@@ -13,11 +13,11 @@ html, body {
 }
 
 body {
-  background-image: url("images/subtract.svg");
+  /*background-image: url("images/subtract.svg");
   background-repeat: no-repeat;
   background-position: 110% -10%;
   background-size:24%;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   background-color: $neutro;
   transition: background-color 1s ease;
 }
@@ -32,11 +32,14 @@ h2, h3, h4, h5,
   font-family: $body-font;
 }
 
-h4 {
+h3 {
+  color: $earth-dark;
   font-family: $heading-font;
-  color: $bg-color;
-  font-size: 4.2em;
+  font-size: 1.8em;
+  margin: 0 0 24px 0;
 }
+
+
 
 a:link, a:visited, a:active {
   color: $brick;
@@ -45,7 +48,6 @@ a:link, a:visited, a:active {
 
 a:hover {
   color: $green-dark;
-  text-decoration: underline;
   transition: 0.3s;
 }
 
@@ -60,9 +62,8 @@ p {
 
 
 
-.panel {
-  min-height: 20px;
-}
+
+
 
 
 .color-brick{
@@ -88,6 +89,11 @@ p {
 .color-sky {
   background-color: $sky;
 }
+
+.color-lila {
+  background-color:#F3EEFA;
+}
+
 
 
 
@@ -128,9 +134,19 @@ a#name:hover {
   color: $green-light;
 }
 
+h2.page-subtitle {
+  font-size: 0.8rem;
+  line-height: auto;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 36px 0 0 0;
+  color: $earth;
+}
+
 p.nav-p {
-	font-size: 14px;
-  line-height: 18px;
+	font-size: 12px;
+  line-height: 16px;
 	font-weight: 600;
 	text-align: left;
 	padding: 0 38px 0 0;
@@ -141,8 +157,8 @@ p.nav-p {
   a:link, a:visited, a:active {
     text-transform: uppercase;
     font-weight: 600;
-    color: $earth-dark;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
   }
   a:hover {
     color: $green-light;
@@ -237,11 +253,13 @@ sidebar {
 	width: 100%;
 	height: 48px;
 }
-
 a#name {
   	top: 16px;
   	left: 18px;
-  }
+}
+h2.page-subtitle {
+  margin: 60px 0 0 0;
+}
 
   .hamburger {
     display: block;
@@ -251,7 +269,6 @@ a#name {
   	cursor: pointer;
     z-index: 101;
   }
-
   nav.navbar,
   p.nav-p {
     display: none;
@@ -295,7 +312,7 @@ MAIN
 ––––––––––––––––––––––––––––––––––––––––*/
 
 #cover {
-  width: 76%;
+  width: 75%;
   position: relative;
   left: 22%;
   z-index: 90;
@@ -309,21 +326,17 @@ MAIN
     margin: 0 0 50px 0;
   }
 
-  h2.page-subtitle {
-    font-size: 0.8rem;
-    line-height: auto;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 36px 0 0 0;
-  }
-
   .content-top {
-    margin: 40px 0 90px 0;
+    margin: 30px 0 90px 0;
     p {
       font-size: 26px;
-      line-height: 36px;
+      line-height: 34px;
+      margin: 4px 0;
     }
+  }
+
+  .start {
+    cursor: pointer;
   }
 }
 
@@ -343,13 +356,15 @@ MAIN
     h1 {
       font-size: 2.6em;
       line-height: 1.1em;
-      margin: 0 0 30px 0;
-    }
-    h2.page-subtitle {
-      margin: 60px 0 0 0;
+      margin: 0 0 40px 0;
     }
     .content-top {
       margin: 30px 0 60px 0;
+      p {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 0 12px 0 0;
+      }
     }
   }
 
@@ -361,19 +376,22 @@ MAIN
 
 
 /*––––––––––––––––––––––––––––––––––––––––
-CONTENT
+LAYOUT
 ––––––––––––––––––––––––––––––––––––––––*/
 
 .content-container {
   width: 70%;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   position: relative;
   left: 22%;
   z-index: 98;
   padding: 0 0 0 0;
+  overflow: hidden;
 }
 
+
+/*
 .bg-image {
   background: yellow;
   background-image: url("images/bgG8L9s1bYKc.jpg");
@@ -381,20 +399,33 @@ CONTENT
   display: block;
   min-height: 100%;
 }
+*/
 
 .quote {
   width: 100%;
-  padding: 60px 30px 0 50px;
-  margin: 0 0 60px 0;
+  padding: 0 140px;
+  h4 {
+    color: $bg-color;
+    font-family: $heading-font;
+    font-size: 2.6em;
+  }
+  .q-marks {
+    font-family: $heading-font;
+    color: $green-light;
+  }
 }
 
+
 .archivo {
-  margin: 60px 0 90px 0;
+  margin: 40px 0 90px 0;
   h3 {
+    font-family: $body-font;
     margin: 0 0 32px 0;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 0.8rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $green-dark;
   }
   span.times {
     font-family: georgia, times, serif;
@@ -403,38 +434,58 @@ CONTENT
   a:link {
     font-weight: 600;
   }
-}
-
-.archivo_dark {
-  background: $sky;
-  padding: 24px;
-  h4 {
-    font-family: $heading-font;
-    font-size: 2.2em;
-    margin: 22px 22px;
-    font-style: italic;
+  a.bottom:link {
+    position: absolute;
+    bottom: 0;
+  }
+  p.c1 {
+    margin-top: 36px;
   }
 }
 
 
-div.main_img {
-  width: 280px;
+
+div.docus {
+  margin: 40px 0;
+  width: 80%;
+  h4 {
+    font-family: $body-font;
+    color: $brick;
+    font-size: 1.8em;
+    margin: 0 0 24px 0;
+  }
+}
+
+
+div.place_img {
+  width: 320px;
   height: 280px;
-  background: #fff;
+  background: #FBF9F2;
+  border: 1px solid $neutro;
 }
 
 div.main_full_img {
   width: 100%;
-  background: #fff;
+  
+  margin: 30px 0;
+  overflow: hidden;
   img {
     max-width: 100%;
   }
 }
 
 
+.panel {
+  min-height: 20px;
+}
 
+div.spacer_a {
+  height: 180px;
+}
 
-
+div.spacer_b {
+  height: 30px;
+}
 
 
 .row {
@@ -442,19 +493,20 @@ div.main_full_img {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin-left: 5px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1.5;
+  flex-basis: 90%;
+  flex: 1;
 }
 
 .double-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 90%;
   flex: 2;
 }
 
@@ -477,21 +529,33 @@ div.main_full_img {
       margin: 22px 22px;
     }
   }
-  div.main_img {
-    width: 80%;
-    height: 280px;
-    background: #fff;
+  div.place_img {
+    width: 95%;
   }
+  .quote {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding: 0 0;
+    h4 {
+      font-size: 1.8em;
+    }
+
+  }
+  div.spacer_a {
+    height: 30px;
+  }
+
+  div.spacer_b {
+    height: 10px;
+  }
+
 }
 
 
 
 
-/*––––––––––––––––––––––––––––––––––––––––*/
-div.docs {
-  margin: 32px 0;
-  width: 80%;
-}
+
 
 
 
@@ -755,10 +819,8 @@ item pages (iiif + metadata)
 .download-button {
   .download {
     @extend .btn-outline-secondary;
-    background-color: #D3EFD4;
-    color: $text-color;
-    border: solid;
-    border-color: gray;
+    background-color: $green-light;
+    border: 1px solid $green-dark;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -767,15 +829,15 @@ item pages (iiif + metadata)
   button.download:hover a {
     color: white;
   }
-  
+
   a {
-    color: $text-color;
+    color: $green-dark;
   }
 
   a:hover {
     text-decoration: none;
   }
-  
+
 }
 
 .metadata-block {

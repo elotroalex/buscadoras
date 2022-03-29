@@ -5,10 +5,11 @@ permalink: /documentos/
 lang: es
 ---
 
+<h3>Documentos</h3>
 {% for documento in site.documentos %}
 
-<div class="docs animatable fadeInUp">
-<h3>{{documento.label}}</h3>
+<div class="docus animatable fadeInUp">
+<h4>{{documento.label}}</h4>
 <p>
 {{documento.brief_creators_summarySP}}<br>
     <div class="download-button">

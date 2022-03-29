@@ -5,7 +5,6 @@ permalink: /tools/
 lang: es
 ---
 
-
 <h3>Herramientas</h3>
 
 <p>Una caja de herramientas fundamentales en la búsqueda de personas personas desaparecidas en México creada a partir de 7 cápsulas en las que familiares comparten sus saberes y conocimiento con respecto a:</p>

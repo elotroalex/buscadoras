@@ -5,7 +5,5 @@ permalink: /recursos/
 lang: es
 ---
 
-Recursos
-
-
+<h3>Recursos</h3>
 {% include collection_gallery.html collection='qatar' facet_by='object_type' %}

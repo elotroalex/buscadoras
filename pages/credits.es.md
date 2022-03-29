@@ -5,6 +5,8 @@ permalink: /credits/
 lang: es
 ---
 
+<h3>Créditos</h3>
+
 <p>Este proyecto recibió la “Beca Mágica” 2021-2022 del Instituto Brown de la Universidad de Columbia en la Ciudad de Nueva York.</p>
 
 <p>También cuenta con el apoyo del Centro de Estudios de México y Centroamérica y la Biblioteca de la Universidad Columbia.</p>

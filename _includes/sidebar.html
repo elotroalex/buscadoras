@@ -31,7 +31,7 @@
 </nav>
 
 
-<p class="nav-p b55">This project is supported by a grant from the <br/>Brown Institute for <br/>Media Innovation.<br/><br/>
+<p class="nav-p b55">This project is supported<br/> by a grant from the <br/>Brown Institute for <br/>Media Innovation.<br/><br/>
 
 <a href="{{ '/credits/' | absolute_url }}" target="_self">
 {{ site.data[site.active_lang]["sidebar"].credits }}
@@ -39,7 +39,7 @@
 
 <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
 {% for language in site.languages %}
-<a {% if language == site.active_lang %}style="color: #ECEAE0;"{% endif %} {% static_href %}href="{% if language == site.default_lang %}{{ "" | absolute_url}}{{page.url}}{% else %}{{"" | absolute_url}}/{{ language }}{{page.url}}{% endif %}"{% endstatic_href %} >
+<a {% if language == site.active_lang %}style="color: #E5F9E6; text-decoration:none;"{% endif %} {% static_href %}href="{% if language == site.default_lang %}{{ "" | absolute_url}}{{page.url}}{% else %}{{"" | absolute_url}}/{{ language }}{{page.url}}{% endif %}"{% endstatic_href %} >
   {% for i in site.data.languages %}
   {% if i.iso == language %}
     {% assign language_name = i.description %}

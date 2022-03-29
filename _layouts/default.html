@@ -5,11 +5,10 @@
 
 {% include sidebar.html %}
 
+<div class="content-container">
+<h2 class="page-subtitle">{{ site.title }}</h2>
+<div class="spacer_b"></div>
 
-<div id="cover">
-
-<h2 class="page-subtitle">{{ page.title }}</h2>
-<br/><br/>
 {{ content }}
 
 </div>
@@ -17,7 +16,7 @@
 
 
 
-
+<!--
 <script type="text/javascript"
   async
   defer
@@ -28,6 +27,6 @@
     defer
     src='{{ "/assets/popper.min.js" | absolute_url }}'
   ></script>
-
+-->
 </body>
 </html>
