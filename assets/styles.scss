@@ -7,9 +7,12 @@ sitemap: false
 $logo: url("{{ '/assets/logo.png' | absolute_url }}");
 
 /* text */
+$heading-font:    'New York', 'serif';
+$heading-font:    'DM Serif Display', 'serif';
 
-$heading-font:    'DM Serif Display', serif;
+$body-font:       'San Francisco', 'sans-serif';
 $body-font:       'Inter', 'sans-serif';
+
 
 /* Image Size */
 
@@ -18,6 +21,7 @@ $thumbnail-width: 200px;
 
 /* colors */
 
+/*
 $bg-color:        #FAFCF7;
 $text-color:      #373737;
 $neutro:          #ECEAE0;
@@ -29,6 +33,27 @@ $brick:           #E66D4B;
 
 $green-dark:     #428270;
 $green-light:    #E5F9E6;
+*/
+
+
+
+$bg-color:        #F7F6F6;
+$text-color:      #32302F;
+$neutro:          #EEEEEC;
+
+$earth:           #A7A2A0;
+$earth-dark:      #847F7C;
+$sky:             #E2EEF7;
+$brick:           #E66D4B;
+
+$green-dark:     #308F67;
+$green-light:    #DEECE6;
+
+
+
+
+
+
 
 /* viewport sizes */
 
@@ -50,3 +75,15 @@ $footer-height:   250px;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import 'bus';
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "New York";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/newyork/newyorkdisplay-regular-webfont.woff");
+}

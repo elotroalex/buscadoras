@@ -6,8 +6,8 @@ lang: es
 ---
 
 <h3>Documentos</h3>
-{% for documento in site.documentos %}
 
+{% for documento in site.documentos %}
 <div class="docus animatable fadeInUp">
 <h4>{{documento.label}}</h4>
 <p>
@@ -19,5 +19,4 @@ lang: es
     </div>
 </p>
 </div>
-
 {% endfor %}

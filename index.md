@@ -5,19 +5,15 @@ permalink: /
 lang: es
 ---
 
-
 <div id="cover" class="panel" data-color="neutro">
   <h2 class="page-subtitle">{{ site.title }}</h2>
   <div class="content-top">
     <h1>Saberes para <br>la búsqueda de <br><span class="color-brick">personas desaparecidas</span><br>en México.</h1>
-    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones.</p>
-    <p>Estas son sus historias <span class="start color-brick" style="font-weight:600;">↓</span></p>
+    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones. Descubre sus historias <span class="start color-brick" style="font-weight:600;">↓</span></p>
   </div>
 </div>
 
-
 <div class="panel" data-color="bgcolor"></div>
-
 
 <div class="content-container">
 <div class="archivo animatable fadeInUp">
@@ -100,7 +96,7 @@ lang: es
 
 
 <div class="content-container">
-<div class="archivo animatable fadeInUp" data-color="sky">
+<div class="archivo animatable fadeInUp" data-color="green">
   <h3>Mapas & Visualizaciones</h3>
   <p>En esta sección encontrarás un mapa con los colectivos existentes en México por estado, con su información de contacto. Además trabajamos en mostrar una mirada más profunda a variables de percepción de violencia en México, organización comunitaria, violencia por municipio de 2015 a 2021.</p>
 
@@ -128,11 +124,6 @@ lang: es
 
 
 
-
-
-
-
-
 <div class="content-container">
 <div class="archivo animatable fadeInUp">
 <h3>Tesoros</h3>
@@ -151,8 +142,6 @@ lang: es
 <br/>
 <a href="{{ '/tesoros/' | absolute_url }}">Fichas de personas desaparecidas</a>
 </div></div><!-- content-container -->
-
-
 
 
 <div class="spacer_a"></div>
