@@ -11,6 +11,5 @@ order: '10'
 layout: qatar_item
 collection: qatar
 thumbnail: "/img/derivatives/simple/obj11/thumbnail.jpg"
-manifest: "/img/derivatives/iiif/obj11/manifest.json"
 full: "/img/derivatives/simple/obj11/fullwidth.jpg"
 ---
