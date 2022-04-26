@@ -473,9 +473,12 @@ search box
     .facet {
       @extend .btn-outline-secondary;
       margin-right: .5em;
-      margin-top: 1rem;
+      margin-top: .5rem;
       font-family: $body-font;
       border-color: none;
+      letter-spacing: 1px;
+
+      
 
     }
     .active{
@@ -492,7 +495,7 @@ search box
 
     .gallery-item {
       padding: 0;
-      margin: .25rem;
+      margin: .5rem;
       background-color: #ffffff;
       max-height: $thumbnail-height;
       max-width: $thumbnail-width;

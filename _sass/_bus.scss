@@ -690,20 +690,21 @@ PURO WAX
 .wax-inline-container {
   @extend .container;
 
-  margin: 0 auto;
-  max-width: 90%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
   width: $max-width;
   overflow: flex-wrap;
 }
 
 .full-width {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: $more-margin;
+  z-index: 98;
+  padding: 0 0 0 0;
+  overflow: hidden;
 }
 
 .wax-parallax.inline-parallax {
@@ -911,6 +912,12 @@ search box
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
+      
+
+      @media only screen and (max-width: 768px) {
+        letter-spacing: 1px;
+        margin-top: .5rem;
+      }
     }
     .active{
       @extend .facet;
@@ -927,18 +934,25 @@ search box
     justify-content: flex-start;
 
     .gallery-item {
+      width: 768px;
       padding: 0;
-      margin: .25rem;
+      margin: .5rem;
       background-color: #ffffff;
       max-height: $thumbnail-height;
       max-width: $thumbnail-width;
       border: 1px $earth solid;
+
+      @media only screen and (max-width: 768px) {
+        max-height: 80vw;
+        max-width: 100%;
+      }
 
       .gallery-thumb {
         object-position: 50% 20%;
         object-fit: cover;
         width: 100%;
         height: 100%;
+  
       }
 
       .hovereffect {
