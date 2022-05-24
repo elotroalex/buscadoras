@@ -5,4 +5,4 @@ permalink: /datavis/
 lang: en
 ---
 
-<h3>Maps</h3>
+<h3>Maps.</h3>

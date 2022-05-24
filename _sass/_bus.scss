@@ -13,13 +13,13 @@ html, body {
 }
 
 body {
-  background-color: $neutro;
+  background-color: $neutro_9;
   transition: background-color 1s ease;
 }
 
 ::selection {
-  color: $earth;
-  background: $bg-color;
+  color: $neutro_9;
+  background: $neutro_9;
 }
 
 h2, h3, h4, h5,
@@ -30,26 +30,24 @@ h2, h3, h4, h5,
 h3 {
   color: #53504D;
   font-family: $heading-font;
-  font-size: 1.4em;
-  margin: 0 0 24px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 4.2em;
+  margin: 60px 0 90px 0;
 }
 
 
 
 a:link, a:visited, a:active {
-  color: $brick;
+  color: $red;
   text-decoration: none;
 }
 
 a:hover {
-  color: $green-dark;
+  color: $green_0;
   transition: 0.3s;
 }
 
 p {
-  color: $text-color;
+  color: $neutro_0;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.65rem;
@@ -64,29 +62,20 @@ p {
 
 
 .color-brick{
-  color: $brick;
+  color: $red;
 }
 
 .color-bgcolor {
-  background-color: $bg-color;
-}
-
-.color-neutro {
-  background-color: $neutro;
+  background-color: $neutro_9;
 }
 
 .color-earth {
-  background-color: $earth;
+  background-color: $neutro_1;
 }
 
 .color-green {
-  background-color: $green-light;
+  background-color: $green_8;
 }
-
-.color-lila {
-  background-color:#F3EEFA;
-}
-
 
 
 
@@ -100,8 +89,8 @@ p {
 /*–––––––––––––––––––––––––––––––––––––––– SIDEBAR ––––––––––––––––––––––––––––––––––––––––*/
 
 sidebar {
-	background-color: $earth-dark;
-	width: 20%;
+	background-color: $neutro_1;
+	width: 18%;
 	height: 100%;
 	position: fixed;
 	left: 0;
@@ -117,15 +106,20 @@ a#name {
   line-height: auto;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: $bg-color;
+  letter-spacing: 0.3px;
+  color: $neutro_8;
 }
 
 a#name:hover {
 	border: none;
   text-decoration: none;
-  color: $green-light;
+  color: $green_8;
 }
+
+
+
+
+
 
 h2.page-subtitle {
   font-size: 0.8rem;
@@ -134,27 +128,26 @@ h2.page-subtitle {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 36px 0 0 0;
-  color: $earth-dark;
+  color: $neutro_1;
 }
 
 p.nav-p {
 	font-size: 12px;
   line-height: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	text-align: left;
 	padding: 0 38px 0 0;
 	position: absolute;
   left: 40px;
   bottom: 40px;
-  color: $neutro;
+  color: $neutro_9;
   a:link, a:visited, a:active {
-    text-transform: uppercase;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
   }
   a:hover {
-    color: $green-light;
+    color: $green_8;
   }
 }
 
@@ -181,21 +174,21 @@ ul.nav-menu li {
 .nav-menu li a:link,
 .nav-menu li a:visited,
 .nav-menu li a:active {
-  padding: 6px 0;
+  padding: 8px 0;
   text-decoration: none;
 	border-bottom: none;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
   display: block;
-  color: $green-light;
+  color: $green_8;
 }
 
 .nav-menu li a:hover {
-  color: $bg-color;
+  color: $neutro_9;
 }
 
 .nav-menu li a.activo {
-  color: $green-dark;
+  color: $green_0;
   font-weight: 500;
 }
 
@@ -208,7 +201,7 @@ ul.nav-menu li {
     width: 20px;
     height: 2px;
     margin: 4px auto;
-		background-color: $neutro;
+		background-color: $neutro_9;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -253,7 +246,6 @@ a#name {
 h2.page-subtitle {
   margin: 60px 0 0 0;
 }
-
   .hamburger {
     display: block;
     position: absolute;
@@ -305,25 +297,25 @@ MAIN
 ––––––––––––––––––––––––––––––––––––––––*/
 
 #cover {
-  width: 72%;
+  width: 68%;
   position: relative;
   left: 22%;
   z-index: 90;
 
   h1 {
     font-family: $heading-font;
-    font-size: 5.8em;
-    line-height: 1.2em;
-    color: $green-dark;
+    font-size: 5.6em;
+    line-height: 1.1em;
+    color: $green_0;
     font-weight: 500;
-    margin: 0 0 50px 0;
+    margin: 40px 0 80px 0;
   }
 
   .content-top {
     margin: 30px 0 90px 0;
     p {
-      font-size: 26px;
-      line-height: 34px;
+      font-size: 22px;
+      line-height: 32px;
       margin: 4px 0;
     }
   }
@@ -368,45 +360,52 @@ MAIN
 
 
 
-/*––––––––––––––––––––––––––––––––––––––––
-LAYOUT
-––––––––––––––––––––––––––––––––––––––––*/
+/* – LAYOUT ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 .content-container {
   width: 70%;
-  /*display: flex;
-  flex-direction: column;*/
   position: relative;
   left: 22%;
   z-index: 98;
-  padding: 0 0 0 0;
+  padding: 0;
   overflow: hidden;
 }
 
-
-/*
-.bg-image {
-  background: yellow;
-  background-image: url("images/bgG8L9s1bYKc.jpg");
-  background-size: 100%;
-  display: block;
-  min-height: 100%;
-}
-*/
-
-.quote {
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 0 140px;
-  h4 {
-    color: $bg-color;
-    font-family: $heading-font;
-    font-size: 2.6em;
-  }
-  .q-marks {
-    font-family: $heading-font;
-    color: $green-light;
-  }
+  margin-left: 5px;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 90%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 90%;
+  flex: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .archivo {
@@ -418,11 +417,7 @@ LAYOUT
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $green-dark;
-  }
-  span.times {
-    font-family: georgia, times, serif;
-    font-size: 2.2em;
+    color: $green_0;
   }
   a:link {
     font-weight: 600;
@@ -437,27 +432,95 @@ LAYOUT
 }
 
 
+.quote {
+  width: 100%;
+  padding: 0 140px;
+  h4 {
+    color: $neutro_9;
+    font-family: $heading-font;
+    font-size: 2.6em;
+  }
+  .q-marks {
+    font-family: $heading-font;
+    color: $green_8;
+  }
+}
+
+
+
+
+
+
+
+
 
 div.docus {
-  margin: 60px 0;
-  width: 60%;
+  margin: 40px 20px 60px 0;
+  width: 33%;
+  /*float: left; */
   h4 {
     font-family: $body-font;
-    color: $brick;
+    color: $red;
     font-size: 1.4em;
     margin: 0 0 18px 0;
   }
   p {
-    text-align: justify;
+
+  }
+  img {
+    width: 60%;
+    margin: 0 0 24px 0;
   }
 }
+
+
+
+
+div.card {
+  min-width: 22%;
+  padding: 24px;
+  margin: 0 36px 36px 0;
+  /*box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.1);*/
+  min-height: 320px;
+  max-width: 33%;
+  h4 {
+    font-family: $body-font;
+    color: $green_0;
+    font-size: 1.2em;
+    margin: 0 0 18px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  a {
+    position: absolute;
+    bottom: 24px;
+    left: 21px;
+  }
+  span.tag {
+    background: $green_8;
+    position: absolute;
+    right: 18px;
+    bottom: 24px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+}
+
+
+
+
+
+
 
 
 div.place_img {
   width: 320px;
   height: 280px;
   background: #FBF9F2;
-  border: 1px solid $neutro;
+  border: 1px solid $neutro_9;
 }
 
 div.main_full_img {
@@ -481,29 +544,6 @@ div.spacer_a {
 
 div.spacer_b {
   height: 30px;
-}
-
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-left: 5px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 90%;
-  flex: 1;
-}
-
-.double-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 90%;
-  flex: 2;
 }
 
 
@@ -618,7 +658,7 @@ PURO WAX
     }
 
     .inline-image-reference {
-      background-color: $neutro;
+      background-color: $neutro_9;
       margin-top: $more-margin;
       margin-bottom: $more-margin;
       display: inline-block;
@@ -643,7 +683,7 @@ PURO WAX
   width: 100vw;
   padding-bottom: 5rem;
   padding-top: 3rem;
-  background-color: $neutro;
+  background-color: $neutro_9;
   col {
     flex-basis: 0;
     flex-shrink: 0;
@@ -718,7 +758,7 @@ PURO WAX
 .wax-parallax {
 
   .parallax-image {
-    background-color: $neutro;
+    background-color: $neutro_9;
     width: 100vw;
     height: $parallax-height;
     max-height: 55vh;
@@ -729,17 +769,17 @@ PURO WAX
   .parallax-caption {
     margin: 0 auto;
     width: 100vw;
-    background-color: $neutro;
+    background-color: $neutro_9;
     padding: $less-margin 0;
     a {
-      color: $green-light;
+      color: $green_8;
       font-weight: 700;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
-      color: $green-dark;
+      color: $green_0;
     }
   }
 }
@@ -757,12 +797,12 @@ item pages (iiif + metadata)
     font-family: $heading-font;
     font-weight: bold;
     font-size: 2.4em;
-    color: $brick !important;
+    color: $red !important;
     text-decoration: none !important;
     background-color: transparent;
     margin: 0;
     &:hover{
-      color: $green-dark !important;
+      color: $green_0 !important;
     }
   }
 }
@@ -789,9 +829,9 @@ item pages (iiif + metadata)
     text-align: center;
     height:   $viewer-height;
     max-height: 80vh;
-    background-color: $neutro;
+    background-color: $neutro_9;
     width:    100%;
-    border:   1px solid $neutro;
+    border:   1px solid $neutro_9;
     margin:   $more-margin 0 $more-margin 0;
 
     a {
@@ -816,8 +856,8 @@ item pages (iiif + metadata)
 .download-button {
   .download {
     @extend .btn-outline-secondary;
-    background-color: $green-light;
-    border: 1px solid $green-dark;
+    background-color: $green_8;
+    border: 1px solid $green_0;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -828,7 +868,7 @@ item pages (iiif + metadata)
   }
 
   a {
-    color: $green-dark;
+    color: $green_0;
   }
 
   a:hover {
@@ -840,7 +880,7 @@ item pages (iiif + metadata)
 .metadata-block {
   font-family: $body-font;
   max-width: 100%;
-  border: $neutro 1px solid;
+  border: $neutro_9 1px solid;
   border-radius: 3px;
   padding: $less-margin;
 
@@ -865,7 +905,7 @@ search box
     margin-bottom: $more-margin;
     &:focus {
         box-shadow: none ;
-        border-color: $neutro;
+        border-color: $neutro_9;
     }
   }
   #results {
@@ -873,7 +913,7 @@ search box
     .result {
       padding: 1em;
       a {
-        color: $text-color;
+        color: $neutro_0;
         text-decoration: none;
         display: flex;
         justify-content: flex-start;
@@ -887,12 +927,12 @@ search box
           margin: 0 !important;
           padding: 0;
           .title{
-            color: $green-light;
+            color: $green_8;
           }
         }
       }
       &:hover {
-        background-color: $neutro
+        background-color: $neutro_9
       }
     }
   }
@@ -907,7 +947,7 @@ search box
       margin-right: .5em;
       margin-top: 1rem;
       background-color: #D3EFD4;
-      color: $text-color;
+      color: $neutro_9;
       border: none;
       font-size: 14px;
       font-weight: 600;
@@ -940,7 +980,7 @@ search box
       background-color: #ffffff;
       max-height: $thumbnail-height;
       max-width: $thumbnail-width;
-      border: 1px $earth solid;
+      border: 1px $neutro_9 solid;
 
       @media only screen and (max-width: 768px) {
         max-height: 80vw;
@@ -982,7 +1022,7 @@ search box
         .info {
           text-decoration: none;
           /*font-family: $heading-font !important;
-          color: $bg-color !important;*/
+          color: $neutro_9 !important;*/
           background-color: transparent;
           opacity: 0;
           filter: alpha(opacity=0);
@@ -1001,7 +1041,7 @@ search box
         // .info {
         //   text-decoration: none;
         //   font-family: $heading-font !important;
-        //   color: $bg-color !important;
+        //   color: $neutro_9 !important;
         //   background-color: transparent;
         //   opacity: 0;
         //   filter: alpha(opacity=0);
@@ -1021,7 +1061,7 @@ search box
           overflow: hidden;
           top: 0;
           left: 0;
-          background-color: $green-light;
+          background-color: $green_8;
           opacity: 0;
           -webkit-transition:opacity 0.5s ease-in-out;
           transition: opacity 0.5s ease-in-out;

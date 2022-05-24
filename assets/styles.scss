@@ -2,15 +2,12 @@
 sitemap: false
 ---
 
-
 /* branding */
 $logo: url("{{ '/assets/logo.png' | absolute_url }}");
 
 /* text */
-$heading-font:    'New York', 'serif';
-$heading-font:    'DM Serif Display', 'serif';
 
-$body-font:       'San Francisco', 'sans-serif';
+$heading-font:    'DM Serif Display', 'serif';
 $body-font:       'Inter', 'sans-serif';
 
 
@@ -22,23 +19,8 @@ $thumbnail-width: 30%;
 /* colors */
 
 /*
-$bg-color:        #FAFCF7;
-$text-color:      #373737;
-$neutro:          #ECEAE0;
-
-$earth:           #A29690;
-$earth-dark:      #766F6C;
-$sky:             #E2EEF7;
-$brick:           #E66D4B;
-
-$green-dark:     #428270;
-$green-light:    #E5F9E6;
-*/
-
-
-
 $bg-color:        #F7F6F6;
-$text-color:      #32302F;
+$text-color:      #31302F;
 $neutro:          #EEEEEC;
 
 $earth:           #A7A2A0;
@@ -46,13 +28,21 @@ $earth-dark:      #847F7C;
 $sky:             #E2EEF7;
 $brick:           #E66D4B;
 
-$green-dark:     #308F67;
-$green-light:    #DEECE6;
+$green-dark:     #428270;
+$green_8:    #DEECE6;
+*/
 
 
+$neutro_0:       #32302F;
+$neutro_1:       #53504D;
+$neutro_8:       #CAC6C5;
+$neutro_9:       #F7F6F6;
 
+$green_0:     #428270;
+$green_8:     #DDFEF4;
+$green_9:     #00FFB6;
 
-
+$red:     #E66D4B;
 
 
 /* viewport sizes */
@@ -76,6 +66,10 @@ $footer-height:   250px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import 'bus';
 
+
+
+
+/*
 @font-face {
   font-family: "San Francisco";
   font-weight: 400;
@@ -87,3 +81,7 @@ $footer-height:   250px;
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/newyork/newyorkdisplay-regular-webfont.woff");
 }
+
+$heading-font:    'New York', 'serif';
+$body-font:       'San Francisco', 'sans-serif';
+*/

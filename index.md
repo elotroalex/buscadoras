@@ -5,15 +5,21 @@ permalink: /
 lang: es
 ---
 
-<div id="cover" class="panel" data-color="neutro">
-  <h2 class="page-subtitle">{{ site.title }}</h2>
+<div id="cover" class="panel" data-color="bgcolor">
+  <h2 class="page-subtitle">Análisis crítico y memoria colectiva</h2>
   <div class="content-top">
     <h1>Saberes para <br>la búsqueda de <br><span class="color-brick">personas desaparecidas</span><br>en México.</h1>
-    <p>Los colectivos de buscadoras han desarrollado métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones. Descubre sus historias <span class="start color-brick" style="font-weight:600;">↓</span></p>
+    <p><span class="color-brick" style="font-weight:600;">+100,000</span> personas han sido desaparecidas en México. En respuesta, familiares y amigos se organizan en colectivos para buscarles, desarrollando métodos de búsqueda, redes de soporte psico-social y protocolos para navegar las instituciones <span class="start color-brick" style="font-weight:600;">↓</span></p>
   </div>
 </div>
 
+
+
+
 <div class="panel" data-color="bgcolor"></div>
+
+
+
 
 <div class="content-container">
 <div class="archivo animatable fadeInUp">
@@ -24,12 +30,11 @@ lang: es
   </div>
 
   <div class="double-column">
-  <p class="c1">Familiares comparten sus saberes: métodos y herramientas para la búsqueda e identificación de personas, cómo recolectar y documentar información, cómo gestionar la relación con autoridades, cómo resguardar la seguridad, el cuidado emocional, el sentido de comunidad y el actuar en colectivo, una guía de resiliencia y transformación personal.</p>
+  <p class="c1">Familiares comparten sus saberes prácticos: métodos y herramientas para la búsqueda e identificación de personas, cómo recolectar y documentar información, cómo gestionar la relación con autoridades, cómo resguardar la seguridad, el cuidado emocional, el sentido de comunidad y el actuar en colectivo, una guía de resiliencia y transformación personal.</p>
   <a href="{{ '/tools/' | absolute_url }}">Leer más</a>
   </div>
 </div><!-- row -->
 </div></div><!-- content-container -->
-
 
 
 
@@ -81,7 +86,7 @@ lang: es
     <a href="{{ '/documentos/' | absolute_url }}" class="bottom">Consultar</a>
   </div>
   <div class="column">
-    <h3>Recursos</h3>
+    <h3>Bibliografía</h3>
     <p>Bibliografía sobre el contexto de violencia en México, producida por investigadores, periodistas, colectivos y activistas.</p><br/>
     <a href="{{ '/recursos/' | absolute_url }}" class="bottom">Consultar</a>
   </div>
@@ -124,24 +129,7 @@ lang: es
 
 
 
-<div class="content-container">
-<div class="archivo animatable fadeInUp">
-<h3>Tesoros</h3>
-<div class="row">
-  <div class="column">  
-  <div class="place_img"><!--<img src="assets/images/6C2A0616.jpg">--></div>
-  </div>
-  <div class="column">  
-  <div class="place_img"><!--<img src="assets/images/6C2A0616.jpg">--></div>
-  </div>
-  <div class="column">  
-  <div class="place_img"><!--<img src="assets/images/6C2A0616.jpg">--></div>
-  </div>
-</div><!-- row -->
 
-<br/>
-<a href="{{ '/tesoros/' | absolute_url }}">Fichas de personas desaparecidas</a>
-</div></div><!-- content-container -->
 
 
 <div class="spacer_a"></div>

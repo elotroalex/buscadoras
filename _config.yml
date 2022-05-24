@@ -18,11 +18,11 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Buscadoras'
-description:      'Testimonios orales, directorios, mapas y andamiaje institucional'
+title:            'No están solas'
+description:      'Saberes para la búsqueda de personas desaparecidas en México'
 url:              'https://minicomp.github.io'
 baseurl:          '/buscadoras'
-copyright:        'Copyleft, 2022'
+copyright:        'Brown Institute for Media Innovation, 2022'
 logo:             '/assets/logo.png'
 
 # ---------------------------------------------------------------
@@ -80,6 +80,10 @@ collections:
     images:
       source: 'raw_images/documentos' # path to the directory of images within `_data`
 
+
+
+
+
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
 # --------------------------------------------------------------
@@ -110,20 +114,21 @@ search:
 # submenu via `sub`.
 
 menu:
+  - label: 'Inicio'
+    link: '/buscadoras/'
   - label: 'Herramientas'
     link: '/herramientas/'
   - label: 'Testimonios'
     link: '/testimonios/'
   - label: 'Documentos'
     link: '/documentos/'
-  - label: 'Recursos'
-    link: '/recursos/'
+  - label: 'Bibliografía'
+    link: '/biblio/'
   - label: 'Mapas'
     link: '/datavis/'
   - label: 'Directorio'
     link: '/directorio/'
-  - label: 'Tesoros'
-    link: '/tesoros/'
+
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS

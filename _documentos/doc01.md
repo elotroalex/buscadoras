@@ -7,15 +7,7 @@ intended_audience: Recurso legal para personas buscadoras
 creator_s: Gobierno de México
 year: '2013'
 brief_creators_summarySP: La presente Ley obliga, en sus respectivas competencias,
-  a las autoridades de todos los ámbitos de gobierno, y de sus poderes constitucionales,
-  así como a cualquiera de sus oficinas, dependencias, organismos o instituciones
-  públicas o privadas que velen por la protección de las víctimas, a proporcionar
-  ayuda, asistencia o reparación integral. Además, reconoce y garantiza los derechos
-  de las víctimas del delito y de violaciones a derechos humanos, en especial el derecho
-  a la asistencia, protección, atención, verdad, justicia, reparación integral, debida
-  diligencia y todos los demás derechos consagrados en ella, en la Constitución, en
-  los Tratados Internacionales de derechos humanos de los que el Estado Mexicano es
-  Parte y demás instrumentos de derechos humanos.
+  a las autoridades de todos los ámbitos de gobierno.
 brief_creators_summaryEN: This Law obliges, in their respective competencies, the
   authorities of all areas of government, and their constitutional powers, as well
   as any of their offices, dependencies, agencies or public or private institutions

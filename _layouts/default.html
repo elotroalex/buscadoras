@@ -1,32 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  {% include head.html %}
+{% include head.html %}
 <body>
 
 {% include sidebar.html %}
 
 <div class="content-container">
-<h2 class="page-subtitle">{{ site.title }}</h2>
-<div class="spacer_b"></div>
-
 {{ content }}
-
 </div>
 
-
-
-
-<!--
-<script type="text/javascript"
-  async
-  defer
-  src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
-
-<script type="text/javascript"
-    async
-    defer
-    src='{{ "/assets/popper.min.js" | absolute_url }}'
-  ></script>
--->
 </body>
 </html>
