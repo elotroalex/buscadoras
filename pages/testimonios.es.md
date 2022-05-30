@@ -6,4 +6,4 @@ lang: es
 ---
 
 <h3>Testimonios</h3>
-{% include collection_gallery.html collection='qatar' facet_by='object_type' %}
+{% include collection_gallery.html collection='entrevistas' facet_by='location_region' %}
