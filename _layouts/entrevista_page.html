@@ -6,7 +6,12 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 
+
+
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+
+
+
 
 {% if page.image_viewer %}
   {% assign viewer = page.image_viewer %}
@@ -15,8 +20,10 @@ layout: default
 {% endif %}
 
 {% if viewer %}
+<p>** Foto aquí **</p>
 <span class='pagination-link' id='prevlink'></span>
 <span class='pagination-link' id='nextlink'></span>
+
   <div class='item-view'>
     
     {% if viewer == 'openseadragon' %}
@@ -29,11 +36,18 @@ layout: default
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 {% endif %}
 
+<hr>
+
+<p>** Audio aquí **</p>
+
 <audio controls>
   <source src="{{site.baseurl}}/assets/entrevistas/{{page.pid}}.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio> 
 
+<hr>
+
+<p>** Metadata aquí **</p>
 
 
 {% comment %}
