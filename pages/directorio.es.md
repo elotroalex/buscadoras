@@ -7,26 +7,37 @@ lang: es
 
 <h3>Directorio.</h3>
 
-row
-<div class="row">
+<!--
+<ul>
+<li><a href="">A</a></li>
+<li><a href="">B</a></li>
+<li><a href="">C</a></li>
+<li><a href="">D</a></li>
+</ul>
+-->
+
+
 {% assign row = site.data.directory %}
 {% for pair in row %}
 
-
-  <h4>{{ pair["nombre"] }} </h4>
-  <p>{{ pair["type"] }} </p>
-  <p>{{ pair["country"] }} </p>
-  <p>{{ pair["state"] }} </p>
-  <p>{{ pair["municipality"] }} </p>
+<div class="line">
+  <h4 style="float:left;">{{ pair["nombre"] }} </h4>
+  <p style="float:left;">{{ pair["type"] }} </p>
+  <p style="float:left;">{{ pair["country"] }} </p>
+  <p style="float:left;">{{ pair["state"] }} </p>
+  <p style="float:left;">{{ pair["municipality"] }} </p>
 
   <a href="{{ pair["web"] }}" target="_blank">Website</a>
-
+  <div style="clear:both;"></div>
+</div>
 
 {% endfor %}
-</div>
+
+
 
 
 <!--
+
 <table>
   {% for row in site.data.directory %}
     {% if forloop.first %}

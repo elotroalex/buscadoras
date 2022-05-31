@@ -35,22 +35,24 @@ $green_8:    #DEECE6;
 
 $neutro_0:       #32302F;
 $neutro_1:       #53504D;
+$neutro_2:       #847F7C;
+$neutro_7:       #E4E2E2;
 $neutro_8:       #CAC6C5;
 $neutro_9:       #F7F6F6;
 
 $green_0:     #428270;
+$green_1:     #22A17E;
 $green_8:     #DDFEF4;
 $green_9:     #00FFB6;
 
 $red:     #E66D4B;
 
 
-/* viewport sizes */
 
+/* viewport sizes */
 $max-width:       980px;
 
 /* margins */
-
 $less-margin:     1.0rem;
 $margin:          1.5rem;
 $more-margin:     2.0rem;
@@ -65,8 +67,6 @@ $footer-height:   250px;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import 'bus';
-
-
 
 
 /*
