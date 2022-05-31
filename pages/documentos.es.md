@@ -8,18 +8,32 @@ lang: es
 <h3>Documentos.</h3>
 
 
-<div class="row">
+<div class="docs">
 {% assign row = site.data.documentos %}
 {% for pair in row %}
-<div class="column card">
-  <h4>{{ pair["label"] }} </h4>
-  <p>{{ pair["document_type"] }} <br/>
-  <i>{{ pair["creator_s"] }}</i>, {{ pair["year"] }}</p>
-  <span class="tag">{{ pair["document_category"] }} </span>
+<div class="row animatable fadeInUp">
+
+<div class="column">
   <img src="../assets/covers/doc{{pair["orden"]}}.png"/>
 </div>
-{% endfor %}
+
+<div class="double-column">
+  <h4><a href="{{ pair["source"] }}" target="_blank">{{ pair["label"] }}</a></h4>
+  <p>{{ pair["document_type"] }}</p>
+  <p>{{ pair["intended_audience"] }}</p>
+  <p>{{ pair["summaryESP"] }}</p>
+
+  <p>{{ pair["creator_s"] }}, {{ pair["year"] }}</p>
+
+  <a href="{{ pair["source"] }}" target="_blank">Fuente</a>  
+  <span class="tag">#{{ pair["document_category"] }}</span>
+</div>
+
 </div><!-- row -->
+{% endfor %}
+</div><!-- card -->
+
+
 
 
 <!--

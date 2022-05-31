@@ -7,34 +7,26 @@ lang: es
 
 <h3>Directorio.</h3>
 
-<!--
-<ul>
-<li><a href="">A</a></li>
-<li><a href="">B</a></li>
-<li><a href="">C</a></li>
-<li><a href="">D</a></li>
-</ul>
--->
 
-
+<div class="directorio">
 {% assign row = site.data.directory %}
 {% for pair in row %}
 
-<div class="line">
+<div class="line animatable fadeInUp">
   <h2>{{ pair["nombre"] }}</h2>
-
   <p>{{ pair["address"] }} {{ pair["state"] }} {{ pair["country"] }}</p>
   <p>{{ pair["phone"] }} {{ pair["email"] }}</p>
-  <p>{{ pair["social_media1"] }} </p>
-  <p>{{ pair["social_media2"] }}</p>
+
+  <p><a href="{{ pair["social_media1"] }}" target="_blank">Facebook</a>
+  <a href="{{ pair["social_media2"] }}" target="_blank">Twitter</a></p>
 
   <span class="tag">#{{ pair["type"] }}</span>
-  <a href="{{ pair["web"] }}" target="_blank">Sitio Web</a>
+  <a href="{{ pair["web"] }}" target="_blank" class="web">Sitio Web</a>
 
 </div>
 
 {% endfor %}
-
+</div><!-- directorio -->
 
 
 

@@ -27,7 +27,7 @@ lang: es
   <div class="row">
 
   <div class="column">  
-  <div class="place_img"><!--<img src="assets/images/6C2A0616.jpg">--></div>
+  <div class="place_img"><img src="assets/images/in_tools.svg"></div>
   </div>
 
   <div class="double-column">
@@ -68,7 +68,7 @@ lang: es
 <h3>Testimonios</h3>
 <div class="row">
   <div class="column">
-    <div class="place_img"></div>
+    <div class="place_img"><img src="assets/images/in_testimonio.svg"></div>
   </div>
   <div class="double-column">
     <p class="c1"><span class="color-brick" style="font-weight:600;">60 entrevistas</span> con madres, abuelas, tías, hermanas, esposas, hijas, padres, hermanos e hijos que buscan a sus seres queridos desaparecidos en México. Una compilación personal sobre el antes y el después de la desaparición, el significado de la búsqueda y la transformación del miedo en fuerza y esperanza para encontrarles.</p>
