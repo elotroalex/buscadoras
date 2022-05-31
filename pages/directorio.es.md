@@ -21,14 +21,16 @@ lang: es
 {% for pair in row %}
 
 <div class="line">
-  <h4 style="float:left;">{{ pair["nombre"] }} </h4>
-  <p style="float:left;">{{ pair["type"] }} </p>
-  <p style="float:left;">{{ pair["country"] }} </p>
-  <p style="float:left;">{{ pair["state"] }} </p>
-  <p style="float:left;">{{ pair["municipality"] }} </p>
+  <h2>{{ pair["nombre"] }}</h2>
 
-  <a href="{{ pair["web"] }}" target="_blank">Website</a>
-  <div style="clear:both;"></div>
+  <p>{{ pair["address"] }} {{ pair["state"] }} {{ pair["country"] }}</p>
+  <p>{{ pair["phone"] }} {{ pair["email"] }}</p>
+  <p>{{ pair["social_media1"] }} </p>
+  <p>{{ pair["social_media2"] }}</p>
+
+  <span class="tag">#{{ pair["type"] }}</span>
+  <a href="{{ pair["web"] }}" target="_blank">Sitio Web</a>
+
 </div>
 
 {% endfor %}

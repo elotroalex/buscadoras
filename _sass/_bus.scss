@@ -525,9 +525,33 @@ div.card {
 div.line {
   width: 100%;
   border-bottom: 2px solid $neutro_9;
-  padding: 24px 0 12px 0;
+  padding: 24px 0 24px 0;
   position: relative;
+  h2 {
+    font-size: 1.4em;
+    margin: 0 0 8px 0;
+  }
+  a {
+    position: absolute;
+    right: 12px;
+    padding: 6px;
+    bottom: 32px;
+  }
+  span.tag {
+    background: $green_8;
+    padding: 6px;
+    border-radius: 6px;
+    position: absolute;
+    right: 110px;
+    bottom: 32px;
+  }
+  p {
+    font-size: 1.1rem;
+    margin: 0;
+    max-width: 80%;
+  }
 }
+
 
 
 
