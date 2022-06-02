@@ -27,7 +27,7 @@ Dir.glob("#{spec.gem_dir}/lib/tasks/*.rake").each { |r| load r }
 
 task :dev do
   puts 'First, let\'s build your site...'
-  sh "jekyll build"
+  sh 'bundle exec jekyll build'
   puts "\n"
   puts 'Let\'s publish your site, hold on a sec...'
 # personal server setup
