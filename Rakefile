@@ -24,3 +24,18 @@ end
 
 spec = Gem::Specification.find_by_name 'wax_tasks'
 Dir.glob("#{spec.gem_dir}/lib/tasks/*.rake").each { |r| load r }
+
+task :dev do
+  puts 'First, let\'s build your site...'
+  sh "jekyll build"
+  puts "\n"
+  puts 'Let\'s publish your site, hold on a sec...'
+# personal server setup
+  user = 'agil'
+  server = 'elotroalex.com'
+  path = '/home/agil/buscadoras-dev.elotroalex.com/'
+  sh "rsync -r -e \"ssh -p22\" _site/. #{user}@#{server}:#{path}"
+  puts "\n"
+  puts 'Bam! Your website is now published!'
+  puts "\n"
+end
