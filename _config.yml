@@ -21,7 +21,7 @@
 title:            'No están solas'
 description:      'Saberes para la búsqueda de personas desaparecidas en México'
 url:              'https://minicomp.github.io'
-baseurl:          '/buscadoras'
+baseurl:          ''
 copyright:        'Brown Institute for Media Innovation, 2022'
 logo:             '/assets/logo.png'
 
