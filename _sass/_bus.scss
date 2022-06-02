@@ -27,6 +27,12 @@ h2, h3, h4, h5,
   font-family: $body-font;
 }
 
+h2 {
+  font-family: $body-font;
+  font-size: 1.4em;
+  margin: 0 0 18px 0;
+}
+
 h3 {
   color: #53504D;
   font-family: $heading-font;
@@ -81,7 +87,7 @@ p {
 }
 
 .color-green {
-  background-color: $green_8;
+  background-color: $green_7;
 }
 
 
@@ -434,7 +440,7 @@ h2.page-subtitle {
   h4, h5 {
     color: $neutro_9;
     font-family: $heading-font;
-    font-size: 2.4em;
+    font-size: 2.6em;
     line-height: 1.4;
     font-weight: 400;
   }
@@ -475,7 +481,7 @@ div.docus {
     margin: 0 0 18px 0;
   }
   p {
-
+    font-size: 12px;
   }
   img {
     width: 60%;
@@ -501,13 +507,12 @@ div.docs {
     margin: 28px 0 12px 0;
   }
   p {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 14px;
     margin: 0 0 12px 0;
     font-weight: 400;
     width: 90%;
-    max-height: 160px;
-    overflow: hidden;
+    
   }
 
   span.tag {
@@ -541,9 +546,9 @@ div.line {
   padding: 24px 0 24px 0;
   position: relative;
   h2 {
-    font-size: 1.6em;
-    margin: 0 0 12px 0;
-    color: $green_0;
+    font-family: $body-font;
+    font-size: 1.4em;
+    margin: 0 0 18px 0;
   }
   a.web {
     position: absolute;
@@ -551,7 +556,6 @@ div.line {
     padding: 6px;
     bottom: 32px;
     font-weight: 600;
-
   }
   span.tag {
     background: $green_8;
@@ -565,6 +569,7 @@ div.line {
     font-size: 1.1rem;
     margin: 0;
     max-width: 80%;
+
   }
 }
 
@@ -577,20 +582,19 @@ div.line {
 div.place_img {
   width: 320px;
   height: 280px;
-  background: #FBF9F2;
-  border: 1px solid $neutro_9;
 }
 
-div.main_full_img {
+
+.main_full_img {
   width: 100%;
-
-  margin: 30px 0;
+  max-height: 420px;
   overflow: hidden;
-  img {
-    max-width: 100%;
-  }
+  margin: 0 0 30px 0;
 }
 
+.main_full_img img {
+  width: 100%;
+}
 
 
 
@@ -641,9 +645,6 @@ div.spacer_a {
     height: 30px;
   }
 
-  div.spacer_b {
-    height: 10px;
-  }
 
 }
 

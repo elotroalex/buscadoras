@@ -120,7 +120,7 @@ lang: es
 
 
 
-<div class="panel spacer_a" data-color="green"></div>
+<div class="panel" data-color="green"></div>
 
 
 <div class="content-container">
