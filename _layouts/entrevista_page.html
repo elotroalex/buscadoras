@@ -6,12 +6,13 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 
+<h2 class="page-subtitle">Buscadora</h2>
+<h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.interviewee }}.</h3>
 
-
-<h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
-
-
-
+<div id="handlers">
+<span class='pagination-link' id='prevlink'></span>
+<span class='pagination-link' id='nextlink'></span>
+</div>
 
 {% if page.image_viewer %}
   {% assign viewer = page.image_viewer %}
@@ -20,35 +21,28 @@ layout: default
 {% endif %}
 
 {% if viewer %}
-<p>** Foto aquí **</p>
-<span class='pagination-link' id='prevlink'></span>
-<span class='pagination-link' id='nextlink'></span>
 
   <div class='item-view'>
-    
+
     {% if viewer == 'openseadragon' %}
       {% include osd_iiif_image_viewer.html manifest=page.manifest prevlink=prevlink nextlink=nextlink %}
     {% else %}
        {% include simple_image_viewer.html full_image=page.full prevlink=prevlink nextlink=nextlink %}
     {% endif %}
-    
+
   </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 {% endif %}
 
-<hr>
 
-<p>** Audio aquí **</p>
 
+<p>Escucha la entrevista:</p>
 <audio controls>
   <source src="{{site.baseurl}}/assets/entrevistas/{{page.pid}}.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio> 
+</audio>
 
-<hr>
-
-<p>** Metadata aquí **</p>
-
+<br/><br/>
 
 {% comment %}
   The block below controls the item metadata table
@@ -63,5 +57,3 @@ Your browser does not support the audio element.
 
   {% include item_metadata_polyglot.html meta=metadata %}
 {% endif %}
-
-

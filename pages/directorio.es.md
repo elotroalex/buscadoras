@@ -12,23 +12,34 @@ lang: es
 {% assign row = site.data.directory %}
 {% for pair in row %}
 
-<div class="line animatable fadeInUp">
-  <h2>{{ pair["nombre"] }}</h2>
-  <p>{{ pair["address"] }} {{ pair["state"] }} {{ pair["country"] }}</p>
+  <div class="line animatable fadeInUp">
+  <h2>{{pair["nombre"]}}</h2>
+
+<!--
+  {% if site.data.directory.state == null %}
+  <p>null</p>
+  {% else %}
+  <p> {{ pair["state"] }}</p>
+  {% endif %}
+  -->
+
+  <p> {{ pair["address"] }} </p>
+  <p> {{ pair["municipality"] }} {{ pair["state"] }} {{ pair["country"] }}</p>
   <p>{{ pair["phone"] }} {{ pair["email"] }}</p>
 
-  <p><a href="{{ pair["social_media1"] }}" target="_blank">Facebook</a>
-  <a href="{{ pair["social_media2"] }}" target="_blank">Twitter</a></p>
-
-  <span class="tag">#{{ pair["type"] }}</span>
+  <br/>
+  <p><a href="{{ pair["social_media1"] }}" target="_blank" class="Fb">Facebook</a>
+  <a href="{{ pair["social_media2"] }}" target="_blank" class="Tw">Twitter</a></p>
   <a href="{{ pair["web"] }}" target="_blank" class="web">Sitio Web</a>
+
+  <span class="tag"># {{ pair["type"] }}</span>
 
 </div>
 
 {% endfor %}
 </div><!-- directorio -->
 
-
+<a href="#" id="top">↑</a>
 
 <!--
 

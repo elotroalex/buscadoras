@@ -36,8 +36,8 @@ h2 {
 h3 {
   color: #53504D;
   font-family: $heading-font;
-  font-size: 4.2em;
-  margin: 60px 0 60px 0;
+  font-size: 3.6em;
+  margin: 40px 0 60px 0;
 }
 
 a:link, a:visited, a:active {
@@ -63,6 +63,47 @@ p {
 
 
 
+
+@media only screen and (max-width: 880px) {
+  h3 {
+    font-size: 2.6em;
+    margin: 60px 0 40px 0;
+  }
+}
+
+
+
+span.tag {
+  background-color: $green_9;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+a.Fb {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-image: url('../assets/images/Facebook_logo.svg');
+  background-size: 100%;
+  line-height: 90px;
+}
+
+a.Tw {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-image: url('../assets/images/Twitter_logo.svg');
+  background-size: 100%;
+  line-height: 90px;
+}
 
 
 
@@ -316,7 +357,7 @@ h2.page-subtitle {
   }
 
   .content-top {
-    margin: 30px 0 90px 0;
+    margin: 20px 0 90px 0;
     p {
       font-size: 22px;
       line-height: 32px;
@@ -469,11 +510,10 @@ h2.page-subtitle {
 
 
 
-
+/*
 div.docus {
   margin: 40px 20px 60px 0;
   width: 33%;
-  /*float: left; */
   h4 {
     font-family: $body-font;
     color: $red;
@@ -488,50 +528,66 @@ div.docus {
     margin: 0 0 24px 0;
   }
 }
+*/
 
 
+a#top {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  background-color: $neutro_1;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: $neutro_9;
+  font-size: 22px;
+  display: none;
+}
+
+a#top:hover {
+  color: $red;
+}
+
+p.intro {
+  color: $neutro_2;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0 0 60px 0;
+}
 
 
-div.docs {
-/*  min-width: 22%;
-  margin: 0 36px 36px 0;
-  min-height: 320px; */
-  /*box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.1);*/
-
+div.documentos {
   width: 100%;
-
-  h4 {
-    font-family: $body-font;
-    color: $green_0;
-    font-size: 1.6em;
-    margin: 28px 0 12px 0;
-  }
-  p {
-    font-size: 12px;
-    line-height: 14px;
-    margin: 0 0 12px 0;
-    font-weight: 400;
-    width: 90%;
-    
-  }
-
-  span.tag {
-    background: $green_8;
-    position: absolute;
-    right: 22px;
-    bottom: 22px;
-    padding: 6px;
-    border-radius: 6px;
-  }
-  img {
-    width: 90%;
-  }
   .row {
     margin: 36px 0;
     background-color: $neutro_9;
     position: relative;
   }
+  img {
+    width: 80%;
+  }
+  h4 {
+    font-family: $body-font;
+    font-size: 1.4em;
+    margin: 28px 0 16px 0;
+    width: 90%;
+  }
+  p {
+    margin: 0;
+    width: 90%;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
 }
+
+
+
+
+
+
 
 
 div.directorio {
@@ -539,43 +595,38 @@ div.directorio {
   padding: 0 24px;
 }
 
-
 div.line {
   width: 100%;
   border-bottom: 2px solid $neutro_8;
-  padding: 24px 0 24px 0;
+  padding: 24px 0 24px 12px;
   position: relative;
   h2 {
     font-family: $body-font;
     font-size: 1.4em;
     margin: 0 0 18px 0;
+    color: $red;
+    width: 90%;
   }
-  a.web {
-    position: absolute;
-    right: 12px;
-    padding: 6px;
-    bottom: 32px;
-    font-weight: 600;
-  }
-  span.tag {
-    background: $green_8;
-    padding: 6px;
-    border-radius: 6px;
-    position: absolute;
-    right: 110px;
-    bottom: 32px;
-  }
+
   p {
     font-size: 1.1rem;
     margin: 0;
     max-width: 80%;
-
   }
+
 }
 
 
 
-
+a.web {
+  color: $neutro_2;
+  display: block;
+  margin: 12px 0 0 0;
+  text-decoration: underline;
+}
+a.web:hover {
+  color: $green_0;
+}
 
 
 
@@ -853,9 +904,9 @@ item pages (iiif + metadata)
   width: 30px;
   text-align: left;
   a {
-    font-family: $heading-font;
+    font-family: $body-font;
     font-weight: bold;
-    font-size: 2.4em;
+    font-size: 2.6em;
     color: $red !important;
     text-decoration: none !important;
     background-color: transparent;
@@ -866,11 +917,21 @@ item pages (iiif + metadata)
   }
 }
 
+#handlers {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}
+
 #prevlink {
   float:left;
 }
 .nextlink {
   float: right;
+}
+
+.item-label {
+  margin: 40px 0 0px 0;
 }
 
 .item-view {

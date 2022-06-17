@@ -7,46 +7,36 @@ lang: es
 
 <h3>Documentos.</h3>
 
+<p class="intro">Una introducción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed risus non sapien consectetur vulputate. Donec sit amet dapibus ex. Fusce ullamcorper porttitor diam, at egestas purus hendrerit in. Donec et ultricies nulla, eget semper nisl.</p>
 
-<div class="docs">
+<div class="documentos">
+
 {% assign row = site.data.documentos %}
 {% for pair in row %}
+
 <div class="row animatable fadeInUp">
 
 <div class="column">
-  <img src="../assets/covers/doc{{pair["orden"]}}.png"/>
+  <img src="../assets/documents_covers/doc{{pair["orden"]}}.png"/>
 </div>
 
 <div class="double-column">
   <h4><a href="{{ pair["source"] }}" target="_blank">{{ pair["label"] }}</a></h4>
-  <p>{{ pair["document_type"] }}</p>
-  <p>{{ pair["intended_audience"] }}</p>
-  <p>{{ pair["summaryESP"] }}</p>
 
-  <p>{{ pair["creator_s"] }}, {{ pair["year"] }}</p>
+  <p>{{ pair["summaryESP"] }}</p><br/>
 
-  <a href="{{ pair["source"] }}" target="_blank">Fuente</a>  
-  <span class="tag">#{{ pair["document_category"] }}</span>
+  <p><strong>Tipo de documento:</strong> {{ pair["document_ type"] }}</p>
+  <p><strong>Dirigido a:</strong> {{ pair["intended_audience"] }}</p>
+  <p><strong>Creado por:</strong> {{ pair["creator_s"] }}, {{ pair["year"] }}</p><br/>
+
+  <p><a href="{{ pair["source"] }}" target="_blank" class="web">Consulta la fuente</a></p>
+  <span class="tag"># {{ pair["document_category"] }}</span>
 </div>
+
 
 </div><!-- row -->
 {% endfor %}
 </div><!-- card -->
 
 
-
-
-<!--
-{% for documento in site.documentos %}
-<div class="docus">
-<img src="../assets/covers/{{documento.pid}}.png"/>
-<h4>{{documento.label}}</h4>
-<p>{{documento.brief_creators_summarySP}}<br>
-<div class="download-button">
-<button class="btn download">
-        <a href="{{site.baseurl}}/documentos/{{documento.pid}}.pdf" target="_blank">{{ site.data[site.active_lang]["global"].download }}</a>
-</button></div>
-</p>
-</div>
-{% endfor %}
--->
+<a href="#" id="top">↑</a>

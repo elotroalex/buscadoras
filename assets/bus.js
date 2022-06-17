@@ -1,5 +1,6 @@
 
 jQuery(function($) {
+
 var doAnimations = function() {
   var offset = $(window).scrollTop() + $(window).height(),
   $animatables = $('.animatable');
@@ -15,8 +16,13 @@ var doAnimations = function() {
       }
     }
   });
+  var scroll = $(window).scrollTop();
+  if (scroll >= 750) {
+    $('#top').fadeIn();
+  } else {
+    $('#top').fadeOut();
+  }
 };
-
 
 $(window).on('scroll', doAnimations);
   $(window).trigger('scroll');
@@ -67,6 +73,15 @@ $('.start').click(function() {
   return false;
 });
 
+
+
+
+
+
+$('#top').click(function(){
+  $("html:not(:animated),body:not(:animated)").animate({scrollTop:0}, 500);
+  return false;
+});
 
 
 

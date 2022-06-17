@@ -12,12 +12,15 @@ lang: es
 {% for pair in row %}
 <div class="line animatable fadeInUp">
 
-  <h2>{{ pair["title"] }} </h2>
+  <h2><a href="{{ pair["original_link"] }}" target="_blank">{{ pair["title"] }}</a></h2>
   <p>{{ pair["creator_s"] }} <br/>
   <i>{{ pair["organization"] }}</i> {{ pair["year"] }}</p>
   <span class="tag">#{{ pair["format"] }}</span>
-  <a href="{{ pair["original_link"] }}" target="_blank" class="web">Fuente</a>
+
+  <p><a href="{{ pair["original_link"] }}" target="_blank" class="web">Consultar fuente</a></p>
 
 </div><!-- row -->
 {% endfor %}
 </div><!-- directorio -->
+
+<a href="#" id="top">↑</a>
