@@ -7,17 +7,21 @@ lang: es
 
 
 <div id="cover" class="panel">
+
   <h2 class="page-subtitle">Análisis crítico • Memoria colectiva</h2>
   <div class="content-top">
     <h1>Saberes para <br>la búsqueda de <br><span class="color-brick">personas desaparecidas</span><br>en México.</h1>
     <p>En México hay cerca de <span class="color-brick" style="font-weight:600;">100,000</span> personas desaparecidas según números oficiales, la mayoría de los casos se dieron desde el comienzo de la guerra contra los cárteles de las drogas en 2006. La inacción y omisión de las autoridades, el estancamiento burocrático y la impunidad han llevado a las familias a tomar el asunto en sus propias manos para buscar y lograr encontrar a sus seres queridos. <span class="start color-brick" style="font-weight:600;">↓</span></p>
-  </div>
-</div>
+  </div><!-- content -->
+
+</div><!-- cover -->
+
+
+
 
 
 
 <div class="panel" data-color="green"></div>
-
 
 
 <div class="content-container">
@@ -150,8 +154,6 @@ lang: es
   <p>Una base de datos con la información de contacto de colectivos, organizaciones de sociedad civil, organismos internacionales e instituciones de gobierno, para facilitar la conexión, comunicación y acceso a la información.</p>
   <a href="{{ '/directorio/' | absolute_url }}">Consultar</a>
 </div></div> <!-- class="content-container" -->
-
-
 
 
 
